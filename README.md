@@ -28,7 +28,7 @@ This app is developed considering the following:
 To run this app you'll need the following:
 
 - [Ubuntu 22.04LTS](https://ubuntu.com/download/desktop). Also can be runned in any Debain Based distro, VM or WSL system.
-- [Docker]
+- [Docker Engine](https://docs.docker.com/engine/install/ubuntu/). This allow to install with all dependencies provided by publisher.
 
 ## Details
 
@@ -38,7 +38,7 @@ To run this app you'll need the following:
 
 Once an Ubuntu system is set, follow this steps. Linked documentation includes details about requirements for each step.
 
-1. Install docker. [Read documentation]()
+1. Install docker. [Instructions](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/documentation.md).
 2. Install compose
 3. Create the needed directories
 4. Move the configuration files
