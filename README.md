@@ -29,7 +29,6 @@ This app is developed considering the following:
 To run this app you'll need the following:
 
 - [Ubuntu 22.04LTS](https://ubuntu.com/download/desktop). Also can be runned in any Debain Based distro, VM or WSL system.
-- [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local). This allows to use CodeProject.AI with GPU
 - [CodeProject.AI](https://hub.docker.com/r/codeproject/ai-server). This is an AI server for image recognition and will be installed via Docker Compose.
 - [Docker Engine](https://docs.docker.com/engine/install/ubuntu/). This allow to install with all dependencies provided by publisher.
 - An nVidia graphics card.
@@ -40,8 +39,7 @@ To run this app you'll need the following:
 Once an Ubuntu system is set, follow this steps. Linked documentation includes details about requirements for each step.
 
 1. Install docker. [Instructions](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-documentation.md)
-2. Install CUDA Toolkit. [Instructions]()
-3. Set the Docker Compose file. [Instructions]()
+2. Set the Docker Compose file. This step will install CodeProject.AI and MySQL Server. [Instructions](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-compose-documentation.md)
 
 
 
