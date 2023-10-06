@@ -17,6 +17,7 @@ Requirements are listed in [docker engine prerequisites documentation](https://d
             modprobe kvm_amd    # AMD processors
             ```
 - 4 GB of RAM
+- An nVidia graphics Card
 
 ## Installation guide
 
@@ -64,7 +65,19 @@ Check if Docker is installed with the following command
 docker --version
 ```
 
-Check and change status service with the following commands
+Try the test container
+```
+sudo docker run hello-world
+```
+## Manage instructions
+Following commands may need super user permissions.
+
+Check file system size with .
+```
+sudo docker system df
+```
+
+Check and change service status.
 ```
 sudo systemctl status docker
 sudo systemctl start docker
@@ -72,49 +85,45 @@ sudo systemctl stop docker
 sudo systemctl restart docker
 ```
 
-Try the test container
-```
-sudo docker run hello-world
-```
-
-List docker containers with following command
+List docker containers .
 ```
 sudo docker ps -a
 ```
 
-## Operation instructions
-Following commands may need super user permissions.
-
 Start a container.
-    
 ```
-docker start [id_del_contenedor]
+docker start [container_id]
 ```
 
 Start all containers.
-
 ```
 docker start $(docker ps -a -q)
 ```
 
 Stop a container.
-    
 ```
-docker stop [id_del_contenedor]
+docker stop [container_id]
 ```
 
 Stop all containers.
-
 ```
 docker stop $(docker ps -a -q)
 ```
 
 Run an specific command inside a container.
 ```
-docker exec -it [id_del_contenedor]] command [options] [arguments]
+docker exec -it [container_id] command [options] [arguments]
 ```
 
+List docker images.
+```
+sudo docker images
+```
 
+Delete a docker image.
+```
+sudo docker rmi [container_id]
+```
 ## Install Compose
 
 Docker Compose is a tool to define multi container apps. It will be needed. Install it with the following command:

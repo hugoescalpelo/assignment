@@ -6,8 +6,8 @@ services:
     ports:
       - 32168:32168
     volumes:
-      - /home/user/codeproject/ai:/etc/codeproject/ai
-      - /home/user/codeproject/ai:/app/modules
+      - ~/DockerVolumes/codeproject/etc/ai:/etc/codeproject/ai
+      - ~/DockerVolumes/codeproject/opt/ai:/app/modules
     deploy:
       resources:
         reservations:
