@@ -38,8 +38,14 @@ To run this app you'll need the following:
 
 Once an Ubuntu system is set, follow this steps. Linked documentation includes details about requirements for each step.
 
-1. Install docker. [Instructions](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-documentation.md)
-2. Set the Docker Compose file. This step will install CodeProject.AI and MySQL Server. [Instructions](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-compose-documentation.md)
+1. Install Docker Engine. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-documentation.md)
+2. Set the Docker Compose file. This step will install CodeProject.AI and MySQL Server. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-compose-documentation.md)
+3. Create the MySQL database.
+4. Set up CodeProject.AI
+5. Install deepface for facial recognition.
+6. Program the IP camera.
+7. Install and configure Node-Red. [Details]()
+8. 
 
 
 

@@ -25,9 +25,27 @@ This repository has the YAML file needed to define this portion of the "data-vis
     ```
     cp ~/Documents/GitHub/data-visualization/Docker/compose.yaml ~/DockerCompose/compose.yaml
     ```
+    **Note**: Edit the MySQL password.
 4. Set the terminal to the ```compose.yaml``` file with ```cd ~/DockerCompose``` and run the compose file. This will install or update the containers. This will take some time depending on your connection and systen capabilities.
     ```
     sudo docker compose up -d
     ```
     **Note**: This will download around 12GB. Be sure you have the needed disk space.
 5. Check the status of your containers with ```sudo docker ps -a```
+
+At this point, CodeProject.AI and MySQL shoudl be running.
+
+## Test installation
+
+### CodePorjectAI
+In a browser, open [localhost:32168](http://localhost:32168/). You should see the CodeProjectAI status local webpage.
+
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-06%2002-07-28.png?raw=true)
+
+### MySQL
+
+Get into the MySQL CLI:
+```
+sudo docker exec -it [id_del_contenedor] mysql -u root -p
+```
+Use the setted passwrod. Default password is **my-secret-pw**
