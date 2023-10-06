@@ -1,0 +1,34 @@
+version: '3'
+services:
+  CodeProjectAI:
+    image: codeproject/ai-server:gpu
+    container_name: CodeProject.AI
+    ports:
+      - 32168:32168
+    volumes:
+      - /home/user/codeproject/ai:/etc/codeproject/ai
+      - /home/user/codeproject/ai:/app/modules
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:latest
+    volumes:
+      #- ~/DockerVolumes/MySQL/config/my.cnf:/etc/mysql/my.cnf
+      - ~/DockerVolumes/MySQL/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+    ports:
+      - "3306:3306"
+    networks:
+      - iot-network
+
+networks:
+  iot-network:
+    driver: bridge

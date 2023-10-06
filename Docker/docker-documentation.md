@@ -30,7 +30,7 @@ sudo sh ./get-docker.sh --dry-run
 ```
 3. Check docker version with ```docker -version```
 
-### Troubleshooting
+### Alternative installation
 If the previous did not work, try [manual apt installation](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository):
 
 1. Add Docker's official GPG key:
@@ -58,9 +58,75 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 ### Test installation
 
-Check if Docker is installed with the following command ```docker --version```
+Check if Docker is installed with the following command 
+
+```
+docker --version
+```
+
+Check and change status service with the following commands
+```
+sudo systemctl status docker
+sudo systemctl start docker
+sudo systemctl stop docker
+sudo systemctl restart docker
+```
 
 Try the test container
 ```
 sudo docker run hello-world
+```
+
+List docker containers with following command
+```
+sudo docker ps -a
+```
+
+## Operation instructions
+Following commands may need super user permissions.
+
+Start a container.
+    
+```
+docker start [id_del_contenedor]
+```
+
+Start all containers.
+
+```
+docker start $(docker ps -a -q)
+```
+
+Stop a container.
+    
+```
+docker stop [id_del_contenedor]
+```
+
+Stop all containers.
+
+```
+docker stop $(docker ps -a -q)
+```
+
+Run an specific command inside a container.
+```
+docker exec -it [id_del_contenedor]] command [options] [arguments]
+```
+
+
+## Install Compose
+
+Docker Compose is a tool to define multi container apps. It will be needed. Install it with the following command:
+
+```
+sudo apt install docker-compose
+```
+
+## Troubleshooting
+
+In case you have trouble running Docker commands, try adding your user to Docker group
+```
+sudo usermod -aG docker $USER
+newgrp docker
 ```
