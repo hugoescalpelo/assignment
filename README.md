@@ -38,17 +38,24 @@ To run this app you'll need the following:
 
 Once an Ubuntu system is set, follow this steps. Linked documentation includes details about requirements for each step.
 
-1. Set up GPU. [Details]()
-Install Docker Engine. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-documentation.md)
-2. Set the Docker Compose file. This step will install CodeProject.AI and MySQL Server. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-compose-documentation.md)
-3. Create the MySQL database.
-4. Set up CodeProject.AI
-5. Install deepface for facial recognition.
-6. Program the IP camera.
-7. Install and configure Node-Red. [Details]()
-8. 
+1. Set up GPU. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/CUDA/cuda-toolkit-instructons.md)
+2. Install Docker Engine. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-documentation.md)
+3. Set the Docker Compose file. This step will install CodeProject.AI and MySQL Server. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-compose-documentation.md)
+4. Create the MySQL database.
+5. Set up CodeProject.AI
+6. Install deepface for facial recognition.
+7. Program the IP camera.
+8. Install and configure Node-Red. [Details]()
+9. 
 
+## Reference
 
+- [Notes on CUDA nVidia support - CodeProject.AI docs](https://www.codeproject.com/Articles/5322557/CodeProject-AI-Server-AI-the-easy-way)
+- [CUDA Installation guide](https://gist.github.com/denguir/b21aa66ae7fb1089655dd9de8351a202)
+- [cuDNN archive](https://developer.nvidia.com/rdp/cudnn-archive)
+- [Install CodeProject.AI with GPU](https://youtu.be/6_jZmAt2yV4?si=QbV8ph1Ldi7IBFY6)
+- [What does off means in nvidia-smi](https://forums.developer.nvidia.com/t/what-does-off-mean-in-the-output-of-nvidia-smi/37509/3)
+- [GPU Persistance Mode](https://www.microway.com/hpc-tech-tips/nvidia-smi_control-your-gpus/)
 
 <!-- 
 2. Create the needed directories
