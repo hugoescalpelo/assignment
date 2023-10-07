@@ -2,7 +2,7 @@
 
 Docker compose is a tool to define multi container applicatons. We will use it to implement:
 
-- [CodeProject.AI](https://www.codeproject.com/Articles/5322557/CodeProject-AI-Server-AI-the-easy-way) Server
+- [CodeProject.AI](https://www.codeproject.com/Articles/5322557/CodeProject-AI-Server-AI-the-easy-way)
 - [MySQL Server](https://ubuntu.com/server/docs/databases-mysql)
 
 ## Instructions
@@ -33,7 +33,11 @@ This repository has the YAML file needed to define this portion of the "data-vis
     **Note**: This will download around 12GB. Be sure you have the needed disk space.
 5. Check the status of your containers with ```sudo docker ps -a```
 
-At this point, CodeProject.AI and MySQL shoudl be running.
+At this point, CodeProject.AI and MySQL should be running.
+
+If GPU configuration was succesfull, the container creation and execution should lool like this.
+
+![]()
 
 ## Test installation
 
@@ -49,3 +53,12 @@ Get into the MySQL CLI:
 sudo docker exec -it [id_del_contenedor] mysql -u root -p
 ```
 Use the setted passwrod. Default password is **my-secret-pw**
+
+
+## Troubleshooting
+
+If you were unable to set up the GPU acces for containers or you dont have a nVidia GPU, you can use the alternative YAML file. Then, change the composer launcher for the following.
+
+```
+sudo docker compose2 up -d
+```

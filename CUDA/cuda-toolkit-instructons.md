@@ -8,6 +8,8 @@ This requires a nVidia GPU capable PC.
 
 ## Instructions
 
+**Note**: this will download around 12GB.
+
 Install nVidia Drivers 516.x or below. I recommend 515.x
 ```
 sudo apt-get update
@@ -55,7 +57,8 @@ Turn GPU ON with following command.
 ```
 sudo nvidia-smi -pm 1
 ```
-
+It should  look like this.
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-06%2020-44-59.png?raw=true)
 
 ## Troubleshooting
 

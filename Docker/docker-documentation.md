@@ -37,9 +37,13 @@ If the previous did not work, try [manual apt installation](https://docs.docker.
 1. Add Docker's official GPG key:
 ```
 sudo apt-get update
+
 sudo apt-get install ca-certificates curl gnupg
+
 sudo install -m 0755 -d /etc/apt/keyrings
+
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 ```
 2. Add the repository to Apt sources:
@@ -49,6 +53,7 @@ echo \
   "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
   "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
 sudo apt-get update
 ```
 
@@ -65,10 +70,22 @@ Check if Docker is installed with the following command
 docker --version
 ```
 
-Try the test container
+If everyting went well, you should see a version number.
+
+Try the test container.
 ```
 sudo docker run hello-world
 ```
+This will check if **hello-world** container is installed, if not, it will download, install and run it. When it finishes, you will see the hello world message.
+
+### Install Compose
+
+Docker Compose is a tool to define multi container apps. It will be needed. Install it with the following command:
+
+```
+sudo apt install docker-compose
+```
+
 ## Manage instructions
 Following commands may need super user permissions.
 
@@ -124,13 +141,7 @@ Delete a docker image.
 ```
 sudo docker rmi [container_id]
 ```
-## Install Compose
 
-Docker Compose is a tool to define multi container apps. It will be needed. Install it with the following command:
-
-```
-sudo apt install docker-compose
-```
 
 ## Troubleshooting
 
