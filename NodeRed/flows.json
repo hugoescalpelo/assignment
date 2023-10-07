@@ -1,0 +1,253 @@
+[
+    {
+        "id": "3b3c60cac9e15652",
+        "type": "tab",
+        "label": "Data Visualization Test App",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0a0816a7bf894544",
+        "type": "group",
+        "z": "3b3c60cac9e15652",
+        "name": "Name generator",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "249c2e3beb9a48e2",
+            "05a11a68b5733742"
+        ],
+        "x": 54,
+        "y": 219,
+        "w": 472,
+        "h": 82
+    },
+    {
+        "id": "ea3d780115fbfa5b",
+        "type": "group",
+        "z": "3b3c60cac9e15652",
+        "name": "Camera Checker",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "90828a1c496c98d6",
+            "0800c63552c2a05b",
+            "303ec5567680214f",
+            "9bbcf76bb5dc64d0",
+            "7e995cb59f7d6127"
+        ],
+        "x": 54,
+        "y": 59,
+        "w": 932,
+        "h": 142
+    },
+    {
+        "id": "90828a1c496c98d6",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "d": true,
+        "g": "ea3d780115fbfa5b",
+        "group": "45493670ebbd75ca",
+        "name": "",
+        "order": 2,
+        "width": 12,
+        "height": 9,
+        "format": "<iframe width=\"640\"\n  height=\"480\"\n  src=\"http://192.168.15.110:81/stream\">\n</iframe>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0800c63552c2a05b",
+        "type": "ui_button",
+        "z": "3b3c60cac9e15652",
+        "g": "ea3d780115fbfa5b",
+        "name": "",
+        "group": "45493670ebbd75ca",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "passthru": false,
+        "label": "Check",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "303ec5567680214f"
+            ]
+        ]
+    },
+    {
+        "id": "303ec5567680214f",
+        "type": "http request",
+        "z": "3b3c60cac9e15652",
+        "g": "ea3d780115fbfa5b",
+        "name": "Get photo",
+        "method": "GET",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "http://192.168.15.110/capture",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 360,
+        "y": 160,
+        "wires": [
+            [
+                "7e995cb59f7d6127"
+            ]
+        ]
+    },
+    {
+        "id": "9bbcf76bb5dc64d0",
+        "type": "file",
+        "z": "3b3c60cac9e15652",
+        "g": "ea3d780115fbfa5b",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 900,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "249c2e3beb9a48e2",
+        "type": "inject",
+        "z": "3b3c60cac9e15652",
+        "g": "0a0816a7bf894544",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 260,
+        "wires": [
+            [
+                "05a11a68b5733742"
+            ]
+        ]
+    },
+    {
+        "id": "05a11a68b5733742",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "0a0816a7bf894544",
+        "name": "Filename Variable",
+        "func": "global.set (\"pictureName\", msg.payload+\".jpg\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7e995cb59f7d6127",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "ea3d780115fbfa5b",
+        "name": "Add name",
+        "func": "msg.filename = \"/home/hugo/Pictures/\"+global.get(\"pictureName\")\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 160,
+        "wires": [
+            [
+                "9bbcf76bb5dc64d0"
+            ]
+        ]
+    },
+    {
+        "id": "0bc8bb819a5c11a1",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "group": "45493670ebbd75ca",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div>\n    <img id=\"cameraImage\" src=\"http://192.168.15.110:81/stream\" width=\"640\" height=\"480\">\n    <canvas id=\"canvas\" width=\"640\" height=\"480\"></canvas>\n</div>\n\n<script>\n    // Obtener la referencia al elemento de imagen y al contexto del lienzo\n    var cameraImage = document.getElementById('cameraImage');\n    var canvas = document.getElementById('canvas');\n    var ctx = canvas.getContext('2d');\n\n    // Dibujar un rectángulo en el lienzo (en este ejemplo, un rectángulo rojo en la posición [100, 100] con un ancho y alto de 50)\n    ctx.fillStyle = 'red';\n    ctx.fillRect(100, 100, 50, 50);\n\n    // Actualizar la imagen de la cámara después de que se haya dibujado el rectángulo (esto podría ser en respuesta a algún evento o temporizador)\n    cameraImage.src = \"http://192.168.15.110:81/stream\"; // Actualiza la URL de la imagen para cargar una nueva captura de la cámara\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 160,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "45493670ebbd75ca",
+        "type": "ui_group",
+        "name": "View",
+        "tab": "6b84b172526fb6d5",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6b84b172526fb6d5",
+        "type": "ui_tab",
+        "name": "Facial Recognition",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
