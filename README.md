@@ -46,7 +46,7 @@ Once an Ubuntu system is set, follow this steps. Linked documentation includes d
 6. Set up CodeProject.AI
 7. Install deepface for facial recognition.
 8. Program the IP camera.
-9. Install and configure Node-Red. [Details]()
+9. Install and configure Node-Red. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/NodeRed/node-red-documentation.md)
 10. 
 
 ## Reference
