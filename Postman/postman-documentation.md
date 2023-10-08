@@ -23,3 +23,7 @@ Following instructions asume you are using Ubuntu 22.04LTS.
     ```
     postman
     ```
+You should see the Postman window. 
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-07%2021-01-52.png?raw=true)
+Do not close the terminal that launched Postman.
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-07%2021-03-06.png?raw=true)
