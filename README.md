@@ -42,12 +42,23 @@ Once an Ubuntu system is set, follow this steps. Linked documentation includes d
 2. Install Docker Engine. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-documentation.md)
 3. Enable GPU Access to containers. [Details]()
 4. Set the Docker Compose file. This step will install CodeProject.AI and MySQL Server. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-compose-documentation.md)
-5. Create the MySQL database.
-6. Set up CodeProject.AI
-7. Install deepface for facial recognition.
-8. Program the IP camera.
-9. Install and configure Node-Red. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/NodeRed/node-red-documentation.md)
+
+
+
+
+- Create the MySQL database.
+- Set up CodeProject.AI
+- Install deepface for facial recognition.
+- Program the IP camera.
+- Install and configure Node-Red. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/NodeRed/node-red-documentation.md)
 10. 
+
+## Testing
+I also provide testing instuctions as part of my archive process.
+
+- [CodeProject.AI basic tests]()
+
+
 
 ## Reference
 
