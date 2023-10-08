@@ -18,4 +18,4 @@ The following assumes you have available selfies. It can be from a webcam, an IP
 
 In vision tab, in the Face Detection Group, clic on the Browse button and provide a picture with a face in it. Then clic on the Detect Faces button and wait for the results. Here is an example of a successful test.
 
-![]()
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-07%2020-42-29.png?raw=true)

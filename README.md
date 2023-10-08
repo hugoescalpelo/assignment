@@ -56,7 +56,7 @@ Once an Ubuntu system is set, follow this steps. Linked documentation includes d
 ## Testing
 I also provide testing instuctions as part of my archive process.
 
-- [CodeProject.AI basic tests]()
+- [CodeProject.AI basic tests](https://github.com/hugoescalpelo/data-visualization/blob/main/CodeProject.AI/basic-testing.md)
 
 
 
