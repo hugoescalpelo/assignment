@@ -44,7 +44,13 @@ The aplication is provided in this repository as a JSON file.
 1. Clic on the hamburger menu and select import option.
 2. Select File Import Option and browse for the **flows.json** file in **/data-visualization/NodeRed/** directory.
 3. Update the following nodes to match your system:
-    - 
+    - The **http request** node called **get picture** in the Camera Cheker group. In the Method field select **GET**, in the URL field writhe the **Capture** URL from an IP camera in the same network you are working, in the Return field select **a binary buffer**.
+    - The **function** node called **Add name** in Camera Checker group. Updathe the path in the string assigned to *msg.filename*, it has to be an absolue path to where you want to storage the picture from the web camera to detect a face.
+    - The **write file** node called **write file** in the Camera Checker group. In the field Filename, select *msg.* and write **filename** as object variable, in the Action field select *Overwrite File*, check the *Create directory if it doesn't exist* checkbox.
+    - The **exec** node called **curl call** in the Camera Checker group. Update the command ```curl --location 'http://localhost:32168/v1/vision/face' --form 'image=@"/home/hugo/Pictures/detect.jpg"' --form 'min_confidence="0.4"'``` to match the absolute path to the face detection file and the URL to your **CodeProject.AI Server**.
+    - The **template** node in Camera Checker. Update the URL to your IP Camera stream URL at the top and the bottom of the code.
+    - The **http request** node called **Get photo** in the Capture Photo Group. Update the URL to your IP camera capture picture URL, be sure Method field is set to **GET** and return field is set to **a binary buffer**.
+    - The **function** node called **Add name** in the Capture Photo group. Update the string assigned to *msg.filename* to have an absolute path to where the Photos will be saved when an user clics on the *Capture* button.
 
 ## Reference
 
