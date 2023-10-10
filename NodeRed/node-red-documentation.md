@@ -2,6 +2,8 @@
 
 Node-Red is an open source visual programming tool based in data flow. It will be used as app server.
 
+This document assumes you are using the ESP32CAM video server as IP Camera, but it can be substituted for any USB camera or IP Camera.
+
 ## Installation
 The following stepps will install Node-Red locally.
 
@@ -41,6 +43,8 @@ The aplication is provided in this repository as a JSON file.
 
 1. Clic on the hamburger menu and select import option.
 2. Select File Import Option and browse for the **flows.json** file in **/data-visualization/NodeRed/** directory.
+3. Update the following nodes to match your system:
+    - 
 
 ## Reference
 
