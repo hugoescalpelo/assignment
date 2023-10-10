@@ -19,3 +19,11 @@ The following assumes you have available selfies. It can be from a webcam, an IP
 In vision tab, in the Face Detection Group, clic on the Browse button and provide a picture with a face in it. Then clic on the Detect Faces button and wait for the results. Here is an example of a successful test.
 
 ![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-07%2020-42-29.png?raw=true)
+
+### Face Registration
+
+In Face tab, in the Face Registration Group, write a person's name, clic on the Browse button and then in the Register Faces button. A person's face will be be registered and a summary will be displayed.
+
+**Note**: there is a folder with 40 faces in this repository in [/data-visualization/faces/face_db/](). Face list was suggested by Chat GPT.
+
+![]()

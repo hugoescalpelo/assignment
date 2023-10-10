@@ -9,8 +9,8 @@ This repository contains an app that does the following:
     **Objective**: Detect and track faces from a live webcam feed and compare them to a predefined collection of other faces.
 
     **Requirements**:
-    - Detect faces in real-time from the webcam feed.
-    - Capture a still frame of the detected face.
+    - ~~Detect faces in real-time from the webcam feed.~~
+    - ~~Capture a still frame of the detected face.~~
     - Compare the captured face to a collection of 40 other people.
     - Display the live camera feed, the extracted face, the top 5 most similar faces from the collection, and a numerical value representing their similarity (recognition score).
 
