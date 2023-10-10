@@ -26,4 +26,6 @@ In Face tab, in the Face Registration Group, write a person's name, clic on the 
 
 **Note**: there is a folder with 40 faces in this repository in [/data-visualization/faces/face_db/](). Face list was suggested by Chat GPT.
 
-![]()
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-10%2015-54-07.png?raw=true)
+
+You can also list registered faces by clicking on the List Registered Faces in Face Registration Group.
