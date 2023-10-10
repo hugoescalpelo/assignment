@@ -43,7 +43,7 @@ This instructions assumes that you have [Postman](https://github.com/hugoescalpe
         "analysisRoundTripMs": 36
     }
     ```
-
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-10%2016-09-11.png?raw=true)
 ## Reference
 
 - [CodeProject.AI Server - Face Detection API Reference](https://www.codeproject.com/ai/docs/api/api_reference.html#face-detection)
