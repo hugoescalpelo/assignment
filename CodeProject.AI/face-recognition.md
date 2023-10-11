@@ -46,7 +46,7 @@ This instructions assumes that you have [Postman](https://github.com/hugoescalpe
     ```
 As you can see, many useful values are returned, as count, coordinates and confidence.
 
-![]()
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-10%2017-58-48.png?raw=true)
 ## Reference
 
 - [CodeProject.AI Server - Face Detection API Reference](https://www.codeproject.com/ai/docs/api/api_reference.html#face-detection)
