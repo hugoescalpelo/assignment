@@ -22,7 +22,7 @@ In vision tab, in the Face Detection Group, clic on the Browse button and provid
 
 ### Face Registration
 
-In Face tab, in the Face Registration Group, write a person's name, clic on the Browse button and then in the Register Faces button. A person's face will be be registered and a summary will be displayed.
+In Face tab, in the Face Registration Group, write a person's name in the field **Person's Name**, clic on the Browse button in the **Select images** field and then clic on the Register Faces button in the **Final Step** field. A person's face will be be registered and a summary will be displayed.
 
 **Note**: there is a folder with 40 faces in this repository in [/data-visualization/faces/face_db/](). Face list was suggested by Chat GPT.
 
@@ -31,3 +31,13 @@ In Face tab, in the Face Registration Group, write a person's name, clic on the 
 You can also list registered faces by clicking on the List Registered Faces in Face Registration Group.
 
 ![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-10%2016-00-17.png?raw=true)
+
+### Face Recognition
+
+In the Face tab, in the Face Recognition Group, clic on the Browse button in the **Image** field and then clic on the **Recognize** button. You can also change the confidence of the algorithm in the **Minimum Recognition Confidence** field by setting a number between 0.0 and 1.0, equivalent to 0% confidence and 100% confidence respectively.
+
+In this example we compare Spielbergs registered face with [a second one](https://github.com/hugoescalpelo/data-visualization/blob/main/faces/test_faces/spielberg2.png).
+
+The results are the following.
+
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-10%2017-51-23.png?raw=true)
