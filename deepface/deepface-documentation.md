@@ -28,6 +28,10 @@ Now you can import deepface library in a Python program.
 ```
 from deepface import DeepFace
 ```
+
+### CUDA
+
+The code in this project needs CUDA. You can find instructions to set it up in the [cuda-toolkit-instructions.md](https://github.com/hugoescalpelo/data-visualization/blob/main/CUDA/cuda-toolkit-instructons.md) file in this repository.
 ## Testing
  
  Instructions to examples are in [deepface-testing]() file in this repository.
