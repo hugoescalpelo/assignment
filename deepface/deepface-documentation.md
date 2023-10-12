@@ -36,6 +36,8 @@ The code in this project needs CUDA. You can find instructions to set it up in t
  
  Instructions to examples are in [deepface-testing]() file in this repository.
 
+ Sample funciton tests are in [deepface-testing.md](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-testing.md) file in this repository.
+
 ## Reference
 
 - [serengil/deepface Github](https://github.com/serengil/deepface).
