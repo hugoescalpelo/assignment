@@ -14,7 +14,11 @@ Download an execution time will vary depending on your PC technical capabilities
 
 ## Facial attribute analysis
 
-Open the [facial-analusis.py](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/facial-analysis.py) program with **Visual Studio Code** or by running a terminal in the .py file directory and using the following command.
+This program analyzes a picture with Hugo Escalpelo face in *samples* folder and returns age, face coordinates, gender, race and emotion.
+
+You need to update the value of *img_path* variable to the path of the image in this repository in your system, since relative directories are not implemented and different systems may use diferent directory structure.
+
+Open the [facial-analysis.py](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/facial-analysis.py) program with **Visual Studio Code** and then clic in the **Run** icon or run it in a terminal where the .py is, using the following command.
 ```
 python3 facial-analysis.py
 ```
@@ -57,3 +61,5 @@ Analysis results are:
    }
 ]
 ```
+## Face Check
+
