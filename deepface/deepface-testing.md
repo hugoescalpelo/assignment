@@ -63,3 +63,37 @@ Analysis results are:
 ```
 ## Face Check
 
+This program compares two pictures with Hugo Escalpelo face in *samples* folder and returns states if the person in both pictures are the same.
+
+You need to update the value of *img1_path* and *img2_path* variables to the path of the images in this repository in your system, since relative directories are not implemented and different systems may use diferent directory structure.
+
+Open the [face-check.py](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/facial-analysis.py) program with **Visual Studio Code** and then clic in the **Run** icon or run it in a terminal where the .py is, using the following command.
+```
+python3 face-check.py
+```
+Result is a JSON describing similarity
+```
+Results
+{
+   "verified":true,
+   "distance":0.04372681046238813,
+   "threshold":0.4,
+   "model":"VGG-Face",
+   "detector_backend":"opencv",
+   "similarity_metric":"cosine",
+   "facial_areas":{
+      "img1":{
+         "x":195,
+         "y":130,
+         "w":254,
+         "h":254
+      },
+      "img2":{
+         "x":99,
+         "y":48,
+         "w":148,
+         "h":148
+      }
+   
+```
+
