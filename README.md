@@ -30,9 +30,12 @@ This app is developed considering the following:
 Here is a summary of software needed. Read instructions first, sequence and custom settings are needed. Each step include detailed instructions.
 
 - [Ubuntu 22.04LTS](https://ubuntu.com/download/desktop). Also can be runned in any Debain Based distro, VM or WSL system.
-- [CodeProject.AI](https://hub.docker.com/r/codeproject/ai-server). This is an AI server for image recognition and will be installed via Docker Compose.
+- [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit). Provides a development environment for creating high performance GPU-accelerated applications.
+    - [cuDNN](https://developer.nvidia.com/cudnn).  Is a GPU-accelerated library of primitives for deep neural networks.
+- [Visual Studio Code](https://code.visualstudio.com/). A code editor redefined and optimized for building and debugging modern web and cloud applications.
+    - [Python Extension - Microsoft](https://github.com/Microsoft/vscode-python). A Visual Studio Code extension with rich support for the Python language.
 - [Docker Engine](https://docs.docker.com/engine/install/ubuntu/). This allow to install with all dependencies provided by publisher.
-- An nVidia graphics card.
+    - [CodeProject.AI](https://hub.docker.com/r/codeproject/ai-server). This is an AI server for image recognition and will be installed via Docker Compose.
 - [Python 3](https://www.python.org/). A high-level programming language.
     - [PIP](https://pypi.org/project/pip/). Python package manager.
         - [deepface](https://github.com/serengil/deepface). Facial processing python library.
