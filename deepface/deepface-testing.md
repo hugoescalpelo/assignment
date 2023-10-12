@@ -18,7 +18,42 @@ Open the [facial-analusis.py](https://github.com/hugoescalpelo/data-visualizatio
 ```
 python3 facial-analysis.py
 ```
-
-
+Result is a JSON describing age, face coordinates, gender, race and emotion.
+```
 Analysis results are: 
-[{'age': 30, 'region': {'x': 195, 'y': 130, 'w': 254, 'h': 254}, 'gender': {'Woman': 0.18008240731433034, 'Man': 99.81991648674011}, 'dominant_gender': 'Man', 'race': {'asian': 42.49655261615232, 'indian': 7.832079102520889, 'black': 3.5013476610986984, 'white': 14.457813767064438, 'middle eastern': 6.8431023861826885, 'latino hispanic': 24.86910223180665}, 'dominant_race': 'asian', 'emotion': {'angry': 3.6864694207906723, 'disgust': 0.0007324741545744473, 'fear': 2.8725260868668556, 'happy': 20.290490984916687, 'sad': 1.7638105899095535, 'surprise': 0.4909480456262827, 'neutral': 70.89502215385437}, 'dominant_emotion': 'neutral'}]
+[
+   {
+      "age":30,
+      "region":{
+         "x":195,
+         "y":130,
+         "w":254,
+         "h":254
+      },
+      "gender":{
+         "Woman":0.18008240731433034,
+         "Man":99.81991648674011
+      },
+      "dominant_gender":"Man",
+      "race":{
+         "asian":42.49655261615232,
+         "indian":7.832079102520889,
+         "black":3.5013476610986984,
+         "white":14.457813767064438,
+         "middle eastern":6.8431023861826885,
+         "latino hispanic":24.86910223180665
+      },
+      "dominant_race":"asian",
+      "emotion":{
+         "angry":3.6864694207906723,
+         "disgust":0.0007324741545744473,
+         "fear":2.8725260868668556,
+         "happy":20.290490984916687,
+         "sad":1.7638105899095535,
+         "surprise":0.4909480456262827,
+         "neutral":70.89502215385437
+      },
+      "dominant_emotion":"neutral"
+   }
+]
+```

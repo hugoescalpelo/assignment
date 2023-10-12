@@ -26,13 +26,33 @@ This app is developed considering the following:
 
 ## Requirements
 
-To run this app you'll need the following:
+### Software
+Here is a summary of software needed. Read instructions first, sequence and custom settings are needed. Each step include detailed instructions.
 
 - [Ubuntu 22.04LTS](https://ubuntu.com/download/desktop). Also can be runned in any Debain Based distro, VM or WSL system.
 - [CodeProject.AI](https://hub.docker.com/r/codeproject/ai-server). This is an AI server for image recognition and will be installed via Docker Compose.
 - [Docker Engine](https://docs.docker.com/engine/install/ubuntu/). This allow to install with all dependencies provided by publisher.
 - An nVidia graphics card.
+- [Python 3](https://www.python.org/). A high-level programming language.
+    - [PIP](https://pypi.org/project/pip/). Python package manager.
+        - [deepface](https://github.com/serengil/deepface). Facial processing python library.
+- [NodeJS](https://nodejs.org/en). An open-source, cross-platform JavaScript runtime environment..
+    - [Node-Red](https://nodered.org/). A programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
+        - [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard). This module provides a set of nodes in Node-RED to quickly create a live data dashboard. 
 
+### Hardware
+
+Suggested minimum requirements are listed.
+
+- Intel Core i5 8th generation or better.
+- AMD Ryzen 5 3rd generation or better.
+- Virtualization compatible processor.
+- 8GB RAM or better.
+- nVidia GTX 1060 or better.
+
+Testing was performed in a system with following capabilities:
+
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-12%2016-17-54.png?raw=true)
 
 ## Instructions
 
