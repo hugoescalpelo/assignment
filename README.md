@@ -78,7 +78,7 @@ Once an Ubuntu system is set, follow this steps. Linked documentation includes d
 I also provide testing instuctions as part of my archive process.
 
 - [CodeProject.AI basic tests](https://github.com/hugoescalpelo/data-visualization/blob/main/CodeProject.AI/basic-testing.md)
-- [Deepface basic tests](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md)
+- [Deepface basic tests](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md   )
 
 
 
