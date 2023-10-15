@@ -28,7 +28,9 @@ This repository has the YAML file needed to define this portion of the "data-vis
     ```
     cp ~/Documents/GitHub/data-visualization/Docker/compose.yaml ~/DockerCompose/compose.yaml
     ```
-    **Note**: Edit the MySQL password.
+    **Note**: Edit the following
+    - MySQL password.
+    - The user in *mosquitto volumes* absolute path. This is because mosquitto container does not support relative paths.
 4. Move the mosquito **.conf** file located in this repository from ```data-visualization/Mosquitto/mosquitto.conf``` to ```~/DockerVolumes/Mosquitto/config```
     ```
     cp ~/Documents/GitHub/data-visualization/Mosquitto/mosquitto.conf ~/DockerVolumes/Mosquitto/config/mosquitto.conf
@@ -40,11 +42,11 @@ This repository has the YAML file needed to define this portion of the "data-vis
     **Note**: This will download around 12GB. Be sure you have the needed disk space.
 6. Check the status of your containers with ```sudo docker ps -a```
 
-At this point, CodeProject.AI and MySQL should be running.
+At this point, CodeProject.AI, mosquitto and MySQL should be running.
 
 If GPU configuration was succesfull, the container creation and execution should lool like this.
 
-![](![Alt text](image.png))
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-06%2020-44-59.png?raw=true)
 
 ## Test installation
 
@@ -53,6 +55,12 @@ In a browser, open [localhost:32168](http://localhost:32168/). You should see th
 
 ![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-06%2002-07-28.png?raw=true)
 
+### Mosquitto
+
+Check if mosquitto is running in port 1883. You need net-tools installed
+```
+
+```
 ### MySQL
 
 Get into the MySQL CLI:

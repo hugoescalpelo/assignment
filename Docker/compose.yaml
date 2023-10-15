@@ -18,18 +18,17 @@ services:
     restart: unless-stopped
   
   mosquitto:
-    image: eclipse-mosquitto:latest
-    container_name: mosquitto
-    environment:
-      - TZ=America/Montreal  # Set the timezone for Montreal
+    image: eclipse-mosquitto
+    restart: always
     volumes:
-      - /home/pi/volumes/mosquitto/config:/mosquitto/config
-      - /home/pi/volumes/mosquitto/data:/mosquitto/data
-      - /home/pi/volumes/mosquitto/log:/mosquitto/log
+      - /home/user/DockerVolumes/mosquitto/config:/mosquitto/config
+      - /home/user/DockerVolumes/mosquitto/data:/mosquitto/data
+      - /home/user/DockerVolumes/mosquitto/log:/mosquitto/log
     ports:
       - 1883:1883
       - 9001:9001
-    restart: unless-stopped
+    networks:
+      - iot-network
 
   mysql:
     image: mysql:latest
@@ -45,4 +44,3 @@ services:
 
 networks:
   iot-network:
-    driver: bridge

@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
   CodeProjectAI:
     image: codeproject/ai-server:gpu
@@ -12,17 +12,16 @@ services:
   
   mosquitto:
     image: eclipse-mosquitto:latest
-    container_name: mosquitto
-    environment:
-      - TZ=America/Montreal  # Set the timezone for Montreal
+    restart: always
     volumes:
-      - /home/pi/volumes/mosquitto/config:/mosquitto/config
-      - /home/pi/volumes/mosquitto/data:/mosquitto/data
-      - /home/pi/volumes/mosquitto/log:/mosquitto/log
+      - /home/hugo/DockerVolumes/mosquitto/config:/mosquitto/config
+      - /home/hugo/DockerVolumes/mosquitto/data:/mosquitto/data
+      - /home/hugo/DockerVolumes/mosquitto/log:/mosquitto/log
     ports:
       - 1883:1883
       - 9001:9001
-    restart: unless-stopped
+    networks:
+      - iot-network
 
   mysql:
     image: mysql:latest
@@ -38,4 +37,4 @@ services:
 
 networks:
   iot-network:
-    driver: bridge
+      driver: bridge
