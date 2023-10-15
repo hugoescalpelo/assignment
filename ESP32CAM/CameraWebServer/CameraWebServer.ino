@@ -139,6 +139,11 @@ void setup() {
   setupLedFlash(LED_GPIO_NUM);
 #endif
 
+  // Add this for a static IP
+  if(!WiFi.config(local_IP, gateway, subnet)) {
+    Serial.println("STA Failed to configure");
+  }
+
   WiFi.begin(ssid, password);
   WiFi.setSleep(false);
 

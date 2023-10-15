@@ -37,6 +37,21 @@ In order to load the program provided in this repository, you need to use Arduin
     - Clic Ok button.
     - Clic on Boards Manager icon at left bar.
     - Search for ESP32 and install **esp32 by Espressif Systems** boards. Around 450 MB will be downlaoded. Installation time depends on your system capabilities and internet speed connection.
+    - Set up pyserial, needed for serial communication. Run the following commands, you can ommit previous components like installation of Git, Python or PIP.
+        ```
+        sudo usermod -a -G dialout $USER
+        sudo apt-get install git
+        wget https://bootstrap.pypa.io/get-pip.py
+        sudo python3 get-pip.py
+        sudo pip3 install pyserial
+        mkdir -p ~/Arduino/hardware/espressif
+        cd ~/Arduino/hardware/espressif
+        git clone https://github.com/espressif/arduino-esp32.git esp32
+        cd esp32/tools
+        python3 get.py
+        ```
+        Around 2.5 GB will be donwloaded. Time will vary depending on your Internet speed connection and system capabilities.
+    - Reboot your system.
 3. Connect an ESP32CAM board already mounted in a USB base or throug a FTDI232 Converter. Connection instructions are in [this file](https://github.com/hugoescalpelo/data-visualization/blob/main/ESP32CAM/esp32cam-ftdi232-connections.md).
 4. Select ESP32CAM board.
     - Clic on the *Select Board* drop down menu.
@@ -80,7 +95,13 @@ In order to load the program provided in this repository, you need to use Arduin
     - Set an available IP in **local_IP** variable, comma separated.
     - Set your gateway IP in **gateway** variable, comma separated.
     - Set your subnet mask in **subnet** variable, comma separated.
-
+8. Save changes with Ctrl+S
+9. Set communication speed by clicking on serial monitor button located at upper right corner of Arduino IDE and then select **115200 baud** at the speed dropdown meny in the upper right corner of the Serial Monitor area located at the bottom of the Arduino IDE.
+10. Set the ESP32CAM in programming mode by doing the following depending on your programming tool:
+    - ESP32CAM base: no action needed.
+    - FTID232: Wire GPIO0 with GND in the ESP32CAM, press Reset button under the ESP32CAM. A message will appear in serial monitor stating that a program upload is expected. Once the program is loaded, disconnect GPIO0 from GND and press Reset button.
+11. Clic on the Uplaod button to load the program. Progress messages will be displayed.
+12. Test the connection. Open the selected IP. A settings page will be updated. Clic on the Start Stream button. A streaming will be displayed.
 
 
 
