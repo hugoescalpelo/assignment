@@ -37,8 +37,11 @@ Here is a summary of software needed. Read instructions first, sequence and cust
 - [Docker Engine](https://docs.docker.com/engine/install/ubuntu/). This allow to install with all dependencies provided by publisher.
     - [CodeProject.AI](https://hub.docker.com/r/codeproject/ai-server). This is an AI server for image recognition and will be installed via Docker Compose.
 - [Arduino IDE](https://www.arduino.cc/en/software). Is an Integrated Developement Environmet to load software to Arduino and Arduino-based boards.
-    
-    - 
+    - [Espressif ESP32 boards for Arduino](https://github.com/espressif/arduino-esp32). Boards library for ESP32 micro controllers in Arduino.
+    - [libfuse2](https://software.opensuse.org/package/libfuse2). A Linux Kernel interface.
+    - [Git](https://git-scm.com/). Version control software.
+    - [arp-Scan](https://linux.die.net/man/1/arp-scan). Network analyzer.
+    - [net-tools](https://net-tools.sourceforge.io/). A collection of networking utilities.
 - [Python 3](https://www.python.org/). A high-level programming language.
     - [PIP](https://pypi.org/project/pip/). Python package manager.
         - [deepface](https://github.com/serengil/deepface). Facial processing python library.
@@ -60,6 +63,10 @@ Testing was performed in a system with following capabilities:
 
 ![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-12%2016-17-54.png?raw=true)
 
+**Other hardware**
+- [ESP32CAM with base](https://docs.ai-thinker.com/en/esp32-cam). ESP32 based developement board with camera.
+- [FTDI232](https://ftdichip.com/) (optional). Serial converter. 
+
 ## Instructions
 
 Once an Ubuntu system is set, follow this steps. Linked documentation includes details about requirements for each step.
@@ -72,8 +79,8 @@ Once an Ubuntu system is set, follow this steps. Linked documentation includes d
 - Create the MySQL database.
 - Set up CodeProject.AI
 - Install deepface for facial recognition.
-- Program the IP camera.
-- Set up [deepface](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md).
+- Program the IP camera. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/ESP32CAM/video-server-documentation.md)
+- Set up deepface. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md).
 - Install and configure Node-Red. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/NodeRed/node-red-documentation.md)
  
 

@@ -21,7 +21,7 @@
         ],
         "x": 34,
         "y": 279,
-        "w": 472,
+        "w": 452,
         "h": 82
     },
     {
@@ -38,16 +38,15 @@
             "a8d14fecdcc434a0",
             "0d36104967960f26",
             "e4bbcd6ba7a591dc",
-            "c63636538ff26163",
             "a7f42c05b6b950a4",
             "7ac1552038e5c119",
             "54969de6ac19eabb",
-            "90828a1c496c98d6"
+            "001c82a4351f2185"
         ],
         "x": 34,
         "y": 31.5,
-        "w": 952,
-        "h": 229.5
+        "w": 1092,
+        "h": 209.5
     },
     {
         "id": "e207b0ca8ceee3d3",
@@ -62,12 +61,41 @@
             "303ec5567680214f",
             "9bbcf76bb5dc64d0",
             "7e995cb59f7d6127",
-            "2af67922ea5d1c1a"
+            "80cd497a1366595e",
+            "fcfe07de4e6eccb7",
+            "de798f2b190316c8"
         ],
         "x": 34,
-        "y": 419,
-        "w": 872,
-        "h": 142
+        "y": 379,
+        "w": 1112,
+        "h": 169.5
+    },
+    {
+        "id": "7b4499f4ca4d2a7b",
+        "type": "group",
+        "z": "3b3c60cac9e15652",
+        "name": "Face registration",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e02f138280eb5849",
+            "a0ec45d4bd68b064",
+            "70945f2165e235ce",
+            "2568df0b7818cd8e",
+            "9a759f9de9e0649b",
+            "ac9fe3658cd3173c",
+            "4fae02c2715ad332",
+            "898cad28233922d9",
+            "6686f8b781f90369",
+            "4a6c16a5c34bd284",
+            "d5f8c86cd20a30fa",
+            "cef438b57e1c1cf3"
+        ],
+        "x": 34,
+        "y": 579,
+        "w": 1132,
+        "h": 282
     },
     {
         "id": "0800c63552c2a05b",
@@ -76,9 +104,9 @@
         "g": "e207b0ca8ceee3d3",
         "name": "",
         "group": "9e639269c77b9c9d",
-        "order": 5,
-        "width": "0",
-        "height": "0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
         "passthru": false,
         "label": "Capture",
         "tooltip": "",
@@ -91,11 +119,10 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 120,
-        "y": 460,
+        "y": 420,
         "wires": [
             [
-                "303ec5567680214f",
-                "2af67922ea5d1c1a"
+                "303ec5567680214f"
             ]
         ]
     },
@@ -108,7 +135,7 @@
         "method": "GET",
         "ret": "bin",
         "paytoqs": "ignore",
-        "url": "http://192.168.15.110/capture",
+        "url": "http://192.168.1.110/capture",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -117,7 +144,7 @@
         "senderr": false,
         "headers": [],
         "x": 340,
-        "y": 460,
+        "y": 420,
         "wires": [
             [
                 "7e995cb59f7d6127"
@@ -137,9 +164,11 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 820,
-        "y": 460,
+        "y": 420,
         "wires": [
-            []
+            [
+                "80cd497a1366595e"
+            ]
         ]
     },
     {
@@ -185,7 +214,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 370,
         "y": 320,
         "wires": [
             []
@@ -205,7 +234,7 @@
         "finalize": "",
         "libs": [],
         "x": 590,
-        "y": 460,
+        "y": 420,
         "wires": [
             [
                 "9bbcf76bb5dc64d0"
@@ -227,7 +256,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "1",
+        "repeat": "0.3",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
@@ -251,7 +280,7 @@
         "method": "GET",
         "ret": "bin",
         "paytoqs": "ignore",
-        "url": "http://192.168.15.110/capture",
+        "url": "http://192.168.1.110/capture",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -259,7 +288,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 330,
+        "x": 350,
         "y": 80,
         "wires": [
             [
@@ -279,7 +308,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 720,
+        "x": 820,
         "y": 80,
         "wires": [
             [
@@ -300,7 +329,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 530,
+        "x": 590,
         "y": 80,
         "wires": [
             [
@@ -321,7 +350,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "curl call",
-        "x": 900,
+        "x": 1040,
         "y": 80,
         "wires": [
             [
@@ -335,17 +364,17 @@
         "id": "c63636538ff26163",
         "type": "debug",
         "z": "3b3c60cac9e15652",
-        "g": "ea3d780115fbfa5b",
         "name": "debug 1",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
-        "y": 220,
+        "x": 1220,
+        "y": 280,
         "wires": []
     },
     {
@@ -357,7 +386,7 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 310,
+        "x": 330,
         "y": 160,
         "wires": [
             [
@@ -371,19 +400,19 @@
         "z": "3b3c60cac9e15652",
         "g": "ea3d780115fbfa5b",
         "name": "Pass coordinates",
-        "func": "global.set(\"x_min\",msg.payload.predictions[0].x_min);\nglobal.set(\"y_min\",msg.payload.predictions[0].y_min);\nglobal.set(\"x_max\",msg.payload.predictions[0].x_max);\nglobal.set(\"y_max\",msg.payload.predictions[0].y_max);\n\nmsg.xmin = msg.payload.predictions[0].x_min;\nmsg.xmax = msg.payload.predictions[0].x_max;\nmsg.ymin = msg.payload.predictions[0].y_min;\nmsg.ymax = msg.payload.predictions[0].y_max;\n\nmsg.payload = (\"x_min: \" + msg.payload.predictions[0].x_min + \"y_min: \" + msg.payload.predictions[0].y_min + \"x_max: \" + msg.payload.predictions[0].x_max + \"y_max: \" + msg.payload.predictions[0].y_max);\n\nreturn msg;",
+        "func": "if (msg.payload.count == 1){\n    global.set(\"x_min\",msg.payload.predictions[0].x_min);\n    global.set(\"y_min\",msg.payload.predictions[0].y_min);\n    global.set(\"x_max\",msg.payload.predictions[0].x_max);\n    global.set(\"y_max\",msg.payload.predictions[0].y_max);   \n\n    msg.xmin = msg.payload.predictions[0].x_min;\n    msg.xmax = msg.payload.predictions[0].x_max;\n    msg.ymin = msg.payload.predictions[0].y_min;\n    msg.ymax = msg.payload.predictions[0].y_max; \n\n    msg.payload = (\"x_min: \" + msg.payload.predictions[0].x_min + \"y_min: \" + msg.payload.predictions[0].y_min + \"x_max: \" + msg.payload.predictions[0].x_max + \"y_max: \" + msg.payload.predictions[0].y_max);\n} else {\n    global.set(\"x_min\",0);\n    global.set(\"y_min\",0);\n    global.set(\"x_max\",1);\n    global.set(\"y_max\",1);\n\n    msg.xmin = 0;\n    msg.xmax = 1;\n    msg.ymin = 0;\n    msg.ymax = 1;\n\n    msg.payload = (\"No face detected\");\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
+        "x": 610,
         "y": 160,
         "wires": [
             [
                 "54969de6ac19eabb",
-                "90828a1c496c98d6"
+                "001c82a4351f2185"
             ]
         ]
     },
@@ -393,7 +422,7 @@
         "z": "3b3c60cac9e15652",
         "g": "ea3d780115fbfa5b",
         "group": "3a959b147c7b9316",
-        "order": 5,
+        "order": 1,
         "width": 0,
         "height": 0,
         "name": "",
@@ -405,65 +434,379 @@
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 790,
+        "x": 850,
         "y": 160,
         "wires": []
     },
     {
-        "id": "90828a1c496c98d6",
-        "type": "ui_template",
+        "id": "e02f138280eb5849",
+        "type": "ui_text_input",
         "z": "3b3c60cac9e15652",
-        "g": "ea3d780115fbfa5b",
-        "group": "45493670ebbd75ca",
-        "name": "",
-        "order": 4,
-        "width": 12,
-        "height": 9,
-        "format": "<iframe id=\"videoFrame\" src=\"http://192.168.15.110:81/stream\" \nwidth=\"640\" height=\"480\"></iframe>\n\n<svg id=\"overlay\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n    <line x1=\"{{msg.xmin}}\" y1=\"{{msg.ymin}}\" x2=\"{{msg.xmax}}\" y2=\"{{msg.ymin}}\"\n        style=\"stroke: red; stroke-width: 2;\" />\n    <line x1=\"{{msg.xmax}}\" y1=\"{{msg.ymin}}\" x2=\"{{msg.xmax}}\" y2=\"{{msg.ymax}}\"\n        style=\"stroke: red; stroke-width: 2;\" />\n    <line x1=\"{{msg.xmax}}\" y1=\"{{msg.ymax}}\" x2=\"{{msg.xmin}}\" y2=\"{{msg.ymax}}\"\n        style=\"stroke: red; stroke-width: 2;\" />\n    <line x1=\"{{msg.xmin}}\" y1=\"{{msg.ymax}}\" x2=\"{{msg.xmin}}\" y2=\"{{msg.ymin}}\"\n        style=\"stroke: red; stroke-width: 2;\" />\n</svg>\n\n<script>\n    function updateImage() {\n        var videoFrame = document.getElementById('videoFrame');\n        var overlay = document.getElementById('overlay');\n\n        // Adjust the size and position of the overlay to match the video frame\n        overlay.style.width = videoFrame.offsetWidth + 'px';\n        overlay.style.height = videoFrame.offsetHeight + 'px';\n\n        var image = new Image();\n        image.src = 'http://192.168.15.110:81/stream?' + new Date().getTime(); // Append a timestamp to force video refresh\n        image.onload = function () {\n            videoFrame.contentWindow.location.reload(); // Reload the iframe to update the video\n        };\n    }\n\n    setInterval(updateImage, 1000); // Update video every 1 second (1000 milliseconds)\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
+        "g": "7b4499f4ca4d2a7b",
+        "name": "Path to new face",
+        "label": "Path to new face",
+        "tooltip": "",
+        "group": "d8380dafa5eff9d1",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
         "className": "",
-        "x": 300,
-        "y": 220,
+        "topicType": "msg",
+        "x": 150,
+        "y": 620,
         "wires": [
             [
-                "c63636538ff26163"
+                "a0ec45d4bd68b064"
             ]
         ]
     },
     {
-        "id": "2af67922ea5d1c1a",
-        "type": "ui_template",
+        "id": "a0ec45d4bd68b064",
+        "type": "function",
         "z": "3b3c60cac9e15652",
-        "g": "e207b0ca8ceee3d3",
-        "group": "9e639269c77b9c9d",
-        "name": "",
-        "order": 2,
-        "width": "6",
-        "height": "6",
-        "format": "",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 580,
-        "y": 520,
+        "g": "7b4499f4ca4d2a7b",
+        "name": "path to face register",
+        "func": "global.set (\"faceReg\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 620,
         "wires": [
             []
         ]
     },
     {
-        "id": "c671f04d896e3cd2",
-        "type": "ui_spacer",
+        "id": "70945f2165e235ce",
+        "type": "ui_text_input",
         "z": "3b3c60cac9e15652",
-        "name": "spacer",
-        "group": "45493670ebbd75ca",
+        "g": "7b4499f4ca4d2a7b",
+        "name": "Name of new face",
+        "label": "Name of new face",
+        "tooltip": "",
+        "group": "d8380dafa5eff9d1",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 150,
+        "y": 680,
+        "wires": [
+            [
+                "2568df0b7818cd8e"
+            ]
+        ]
+    },
+    {
+        "id": "2568df0b7818cd8e",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "7b4499f4ca4d2a7b",
+        "name": "name to face register",
+        "func": "global.set (\"nameReg\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a759f9de9e0649b",
+        "type": "ui_button",
+        "z": "3b3c60cac9e15652",
+        "g": "7b4499f4ca4d2a7b",
+        "name": "",
+        "group": "d8380dafa5eff9d1",
         "order": 3,
-        "width": 5,
-        "height": 1
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "Register",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 120,
+        "y": 740,
+        "wires": [
+            [
+                "ac9fe3658cd3173c"
+            ]
+        ]
+    },
+    {
+        "id": "ac9fe3658cd3173c",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "7b4499f4ca4d2a7b",
+        "name": "generate curl",
+        "func": "msg.payload = \"curl --location 'http://localhost:32168/v1/vision/face/register' --form 'imageN=@\\\"\" + global.get(\"faceReg\") + \"\\\"' --form 'userid=\\\"\"+ global.get (\"nameReg\") +\"\\\"'\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 740,
+        "wires": [
+            [
+                "4fae02c2715ad332"
+            ]
+        ]
+    },
+    {
+        "id": "4fae02c2715ad332",
+        "type": "exec",
+        "z": "3b3c60cac9e15652",
+        "g": "7b4499f4ca4d2a7b",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Register a face",
+        "x": 600,
+        "y": 740,
+        "wires": [
+            [
+                "898cad28233922d9"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "898cad28233922d9",
+        "type": "json",
+        "z": "3b3c60cac9e15652",
+        "g": "7b4499f4ca4d2a7b",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 810,
+        "y": 740,
+        "wires": [
+            [
+                "6686f8b781f90369"
+            ]
+        ]
+    },
+    {
+        "id": "6686f8b781f90369",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "7b4499f4ca4d2a7b",
+        "name": "Check success",
+        "func": "if (msg.payload.success == true)\n{\n    msg.payload = \"Succes! Face registered\";\n} else {\n    msg.payload = \"Something went wrong!\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 740,
+        "wires": [
+            [
+                "4a6c16a5c34bd284",
+                "d5f8c86cd20a30fa"
+            ]
+        ]
+    },
+    {
+        "id": "4a6c16a5c34bd284",
+        "type": "ui_text",
+        "z": "3b3c60cac9e15652",
+        "g": "7b4499f4ca4d2a7b",
+        "group": "d8380dafa5eff9d1",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "Status",
+        "label": "Status",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 810,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "d5f8c86cd20a30fa",
+        "type": "delay",
+        "z": "3b3c60cac9e15652",
+        "g": "7b4499f4ca4d2a7b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 340,
+        "y": 820,
+        "wires": [
+            [
+                "cef438b57e1c1cf3"
+            ]
+        ]
+    },
+    {
+        "id": "cef438b57e1c1cf3",
+        "type": "change",
+        "z": "3b3c60cac9e15652",
+        "g": "7b4499f4ca4d2a7b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Waiting for a new face",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 600,
+        "y": 820,
+        "wires": [
+            [
+                "4a6c16a5c34bd284"
+            ]
+        ]
+    },
+    {
+        "id": "80cd497a1366595e",
+        "type": "delay",
+        "z": "3b3c60cac9e15652",
+        "g": "e207b0ca8ceee3d3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1050,
+        "y": 420,
+        "wires": [
+            [
+                "de798f2b190316c8"
+            ]
+        ]
+    },
+    {
+        "id": "fcfe07de4e6eccb7",
+        "type": "exec",
+        "z": "3b3c60cac9e15652",
+        "g": "e207b0ca8ceee3d3",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 570,
+        "y": 500,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "de798f2b190316c8",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "e207b0ca8ceee3d3",
+        "name": "Open captured photo",
+        "func": "msg.payload = \"eog \" + msg.filename;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 500,
+        "wires": [
+            [
+                "fcfe07de4e6eccb7"
+            ]
+        ]
+    },
+    {
+        "id": "001c82a4351f2185",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "ea3d780115fbfa5b",
+        "group": "45493670ebbd75ca",
+        "name": "",
+        "order": 1,
+        "width": 12,
+        "height": 9,
+        "format": "<iframe id=\"videoFrame\" src=\"http://192.168.1.110:81/stream\" width=\"640\" height=\"480\"></iframe>\n\n<svg id=\"overlay\" style=\"position: absolute; top: 0; left: 0; width: 100%; height: 100%;\">\n\n\n    <!-- Add lines for each corner with light green color and 1/2 stroke width extension -->\n    <line x1=\"{{msg.xmin - (0.5 * 9.3640625)}}\" y1=\"{{msg.ymin}}\" x2=\"{{msg.xmin + (msg.xmax - msg.xmin) / 5}}\" y2=\"{{msg.ymin}}\"\n        style=\"stroke: rgba(179, 221, 202, 1); stroke-width: 9.3640625;\" />\n    <line x1=\"{{msg.xmin}}\" y1=\"{{msg.ymin}}\" x2=\"{{msg.xmin}}\" y2=\"{{msg.ymin + (msg.ymax - msg.ymin) / 5}}\"\n        style=\"stroke: rgba(179, 221, 202, 1); stroke-width: 9.3640625;\" />\n\n    <line x1=\"{{msg.xmax + (0.5 * 9.3640625)}}\" y1=\"{{msg.ymin}}\" x2=\"{{msg.xmax - (msg.xmax - msg.xmin) / 5}}\" y2=\"{{msg.ymin}}\"\n        style=\"stroke: rgba(179, 221, 202, 1); stroke-width: 9.3640625;\" />\n    <line x1=\"{{msg.xmax}}\" y1=\"{{msg.ymin}}\" x2=\"{{msg.xmax}}\" y2=\"{{msg.ymin + (msg.ymax - msg.ymin) / 5}}\"\n        style=\"stroke: rgba(179, 221, 202, 1); stroke-width: 9.3640625;\" />\n\n    <line x1=\"{{msg.xmax + (0.5 * 9.3640625)}}\" y1=\"{{msg.ymax}}\" x2=\"{{msg.xmax - (msg.xmax - msg.xmin) / 5}}\" y2=\"{{msg.ymax}}\"\n        style=\"stroke: rgba(179, 221, 202, 1); stroke-width: 9.3640625;\" />\n    <line x1=\"{{msg.xmax}}\" y1=\"{{msg.ymax}}\" x2=\"{{msg.xmax}}\" y2=\"{{msg.ymax - (msg.ymax - msg.ymin) / 5}}\"\n        style=\"stroke: rgba(179, 221, 202, 1); stroke-width: 9.3640625;\" />\n\n    <line x1=\"{{msg.xmin - (0.5 * 9.3640625)}}\" y1=\"{{msg.ymax}}\" x2=\"{{msg.xmin + (msg.xmax - msg.xmin) / 5}}\" y2=\"{{msg.ymax}}\"\n        style=\"stroke: rgba(179, 221, 202, 1); stroke-width: 9.3640625;\" />\n    <line x1=\"{{msg.xmin}}\" y1=\"{{msg.ymax}}\" x2=\"{{msg.xmin}}\" y2=\"{{msg.ymax - (msg.ymax - msg.ymin) / 5}}\"\n        style=\"stroke: rgba(179, 221, 202, 1); stroke-width: 9.3640625;\" />\n\n    <!-- Add lines for each corner with light green color and 1/2 stroke width extension -->\n    <line x1=\"{{msg.xmin}}\" y1=\"{{msg.ymin}}\" x2=\"{{msg.xmin + (msg.xmax - msg.xmin) / 3}}\" y2=\"{{msg.ymin}}\"\n        style=\"stroke: rgba(179, 221, 202, 0.5); stroke-width: 9.3640625;\" />\n    <line x1=\"{{msg.xmin}}\" y1=\"{{msg.ymin}}\" x2=\"{{msg.xmin}}\" y2=\"{{msg.ymin + (msg.ymax - msg.ymin) / 3}}\"\n        style=\"stroke: rgba(179, 221, 202, 0.5); stroke-width: 9.3640625;\" />\n\n    <line x1=\"{{msg.xmax}}\" y1=\"{{msg.ymin}}\" x2=\"{{msg.xmax - (msg.xmax - msg.xmin) / 3}}\" y2=\"{{msg.ymin}}\"\n        style=\"stroke: rgba(179, 221, 202, 0.5); stroke-width: 9.3640625;\" />\n    <line x1=\"{{msg.xmax}}\" y1=\"{{msg.ymin}}\" x2=\"{{msg.xmax}}\" y2=\"{{msg.ymin + (msg.ymax - msg.ymin) / 3}}\"\n        style=\"stroke: rgba(179, 221, 202, 0.5); stroke-width: 9.3640625;\" />\n\n    <line x1=\"{{msg.xmax}}\" y1=\"{{msg.ymax}}\" x2=\"{{msg.xmax - (msg.xmax - msg.xmin) / 3}}\" y2=\"{{msg.ymax}}\"\n        style=\"stroke: rgba(179, 221, 202, 0.5); stroke-width: 9.3640625;\" />\n    <line x1=\"{{msg.xmax}}\" y1=\"{{msg.ymax}}\" x2=\"{{msg.xmax}}\" y2=\"{{msg.ymax - (msg.ymax - msg.ymin) / 3}}\"\n        style=\"stroke: rgba(179, 221, 202, 0.5); stroke-width: 9.3640625;\" />\n\n    <line x1=\"{{msg.xmin}}\" y1=\"{{msg.ymax}}\" x2=\"{{msg.xmin + (msg.xmax - msg.xmin) / 3}}\" y2=\"{{msg.ymax}}\"\n        style=\"stroke: rgba(179, 221, 202, 0.5); stroke-width: 9.3640625;\" />\n    <line x1=\"{{msg.xmin}}\" y1=\"{{msg.ymax}}\" x2=\"{{msg.xmin}}\" y2=\"{{msg.ymax - (msg.ymax - msg.ymin) / 3}}\"\n        style=\"stroke: rgba(179, 221, 202, 0.5); stroke-width: 9.3640625;\" />\n\n\n</svg>\n\n<script>\n    function updateImage() {\n        var videoFrame = document.getElementById('videoFrame');\n        var overlay = document.getElementById('overlay');\n\n        // Adjust the size and position of the overlay to match the video frame\n        overlay.style.width = videoFrame.offsetWidth + 'px';\n        overlay.style.height = videoFrame.offsetHeight + 'px';\n\n        var image = new Image();\n        image.src = 'http://192.168.1.110:81/stream?' + new Date().getTime(); // Append a timestamp to force video refresh\n        image.onload = function () {\n            videoFrame.contentWindow.location.reload(); // Reload the iframe to update the video\n        };\n    }\n\n    setInterval(updateImage, 1000); // Update video every 1 second (1000 milliseconds)\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 820,
+        "y": 200,
+        "wires": [
+            []
+        ]
     },
     {
         "id": "9e639269c77b9c9d",
@@ -482,6 +825,17 @@
         "name": "Data",
         "tab": "6b84b172526fb6d5",
         "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d8380dafa5eff9d1",
+        "type": "ui_group",
+        "name": "Face Registration",
+        "tab": "6b84b172526fb6d5",
+        "order": 4,
         "disp": true,
         "width": "6",
         "collapse": false,

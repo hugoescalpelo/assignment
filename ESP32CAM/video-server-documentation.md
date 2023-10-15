@@ -9,6 +9,19 @@ In order to load the program provided in this repository, you need to use Arduin
 
 ### Software
 - [Arduino IDE](https://www.arduino.cc/en/software).
+- [Espressif ESP32 boards for Arduino](https://github.com/espressif/arduino-esp32).
+- [libfuse2](https://software.opensuse.org/package/libfuse2).
+- [Git](https://git-scm.com/).
+- [Python3](https://www.python.org/).
+- [PIP](https://pypi.org/project/pip/).
+- [arp-Scan](https://linux.die.net/man/1/arp-scan).
+- [net-tools](https://net-tools.sourceforge.io/).
+- Web browser
+
+### Hardware
+- [ESP32CAM with base](https://docs.ai-thinker.com/en/esp32-cam).
+- [FTDI232](https://ftdichip.com/) (optional).
+
 
 
 ## Instructions
@@ -102,7 +115,8 @@ In order to load the program provided in this repository, you need to use Arduin
     - FTID232: Wire GPIO0 with GND in the ESP32CAM, press Reset button under the ESP32CAM. A message will appear in serial monitor stating that a program upload is expected. Once the program is loaded, disconnect GPIO0 from GND and press Reset button.
 11. Clic on the Uplaod button to load the program. Progress messages will be displayed.
 12. Test the connection. Open the selected IP. A settings page will be updated. Clic on the Start Stream button. A streaming will be displayed.
-
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-15%2000-53-39.png?raw=true)
+13. Stop the streaming. Now you can close the tab.
 
 
 ## Reference
@@ -110,3 +124,4 @@ In order to load the program provided in this repository, you need to use Arduin
 - [Espressif **arduino-esp32** install instructions](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
 - [Get network settings 1](https://www.techrepublic.com/article/how-to-scan-for-ip-addresses-on-your-network-with-linux/)
 - [Get network settings 2](https://devconnected.com/how-to-get-your-ip-address-on-linux/)
+- [Static IP ESP32CAM](https://randomnerdtutorials.com/esp32-cam-static-fixed-ip-address-arduino/)
