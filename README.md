@@ -45,6 +45,7 @@ Here is a summary of software needed. Read instructions first, sequence and cust
 - [Python 3](https://www.python.org/). A high-level programming language.
     - [PIP](https://pypi.org/project/pip/). Python package manager.
         - [deepface](https://github.com/serengil/deepface). Facial processing python library.
+        - [paho-mqtt](pip install paho-mqtt). An M2M protocol library.
 - [NodeJS](https://nodejs.org/en). An open-source, cross-platform JavaScript runtime environment..
     - [Node-Red](https://nodered.org/). A programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
         - [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard). This module provides a set of nodes in Node-RED to quickly create a live data dashboard. 
@@ -67,7 +68,7 @@ Testing was performed in a system with following capabilities:
 - [ESP32CAM with base](https://docs.ai-thinker.com/en/esp32-cam). ESP32 based developement board with camera.
 - [FTDI232](https://ftdichip.com/) (optional). Serial converter. 
 
-## Instructions
+## Installation instructions
 
 Once an Ubuntu system is set, follow this steps. Linked documentation includes details about requirements for each step.
 
@@ -78,7 +79,8 @@ Once an Ubuntu system is set, follow this steps. Linked documentation includes d
 
 - Create the MySQL database.
 - Set up CodeProject.AI
-- Install deepface for facial recognition.
+- Install Mosquitto MQTT. [Details]()
+- Install deepface for facial recognition. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md).
 - Program the IP camera. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/ESP32CAM/video-server-documentation.md)
 - Set up deepface. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md).
 - Install and configure Node-Red. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/NodeRed/node-red-documentation.md)

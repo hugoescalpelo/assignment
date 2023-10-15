@@ -28,14 +28,16 @@ Now you can import deepface library in a Python program.
 ```
 from deepface import DeepFace
 ```
-
+### MQTT
+THe program used to integrate deepface results into an App uses MQTT to send results. Lthe library used is [paho-mqtt](https://pypi.org/project/paho-mqtt/). To install it, run the following commad.
+```
+pip install paho-mqtt
+```
 ### CUDA
 
-The code in this project needs CUDA. You can find instructions to set it up in the [cuda-toolkit-instructions.md](https://github.com/hugoescalpelo/data-visualization/blob/main/CUDA/cuda-toolkit-instructons.md) file in this repository.
+Deepface is compatible with CUDA, its usage is optional. You can find instructions to set it up in the [cuda-toolkit-instructions.md](https://github.com/hugoescalpelo/data-visualization/blob/main/CUDA/cuda-toolkit-instructons.md) file in this repository.
 ## Testing
  
- Instructions to examples are in [deepface-testing]() file in this repository.
-
  Sample funciton tests are in [deepface-testing.md](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-testing.md) file in this repository.
 
 ## Reference

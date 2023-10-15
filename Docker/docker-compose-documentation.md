@@ -19,6 +19,9 @@ This repository has the YAML file needed to define this portion of the "data-vis
     mkdir -p ~/DockerVolumes/MySQL/data
     mkdir -p ~/DockerVolumes/codeproject/etc/ai
     mkdir -p ~/DockerVolumes/codeproject/opt/ai
+    mkdir -p ~/DockerVolumes/Mosquitto/config
+    mkdir -p ~/DockerVolumes/Mosquitto/data
+    mkdir -p ~/DockerVolumes/Mosquitto/log
     ```
 3. Move the ```compose.yaml``` file in this repository to the DockerCompose directory. This step assumes you cloned this repository via GitHub Desktop and its stored in the default directory: ```~/Documents/GitHub```. For this case, you can run the following command to move said file.
 
@@ -26,12 +29,16 @@ This repository has the YAML file needed to define this portion of the "data-vis
     cp ~/Documents/GitHub/data-visualization/Docker/compose.yaml ~/DockerCompose/compose.yaml
     ```
     **Note**: Edit the MySQL password.
-4. Set the terminal to the ```compose.yaml``` file with ```cd ~/DockerCompose``` and run the compose file. This will install or update the containers. This will take some time depending on your connection and systen capabilities.
+4. Move the mosquito **.conf** file located in this repository from ```data-visualization/Mosquitto/mosquitto.conf``` to ```~/DockerVolumes/Mosquitto/config```
+    ```
+    cp ~/Documents/GitHub/data-visualization/Mosquitto/mosquitto.conf ~/DockerVolumes/Mosquitto/config/mosquitto.conf
+    ```
+5. Set the terminal to the ```compose.yaml``` file with ```cd ~/DockerCompose``` and run the compose file. This will install or update the containers. This will take some time depending on your connection and systen capabilities.
     ```
     sudo docker compose up -d
     ```
     **Note**: This will download around 12GB. Be sure you have the needed disk space.
-5. Check the status of your containers with ```sudo docker ps -a```
+6. Check the status of your containers with ```sudo docker ps -a```
 
 At this point, CodeProject.AI and MySQL should be running.
 
