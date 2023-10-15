@@ -27,3 +27,27 @@ In order to load the program provided in this repository, you need to use Arduin
         ```
     - Log out or reboot to changes had effect.
     - Double clic on Arduino 2.2.1 AppImage File to run it.
+2. Add ESP32 boards to Arduino IDE.
+    - Open Arduino IDE
+    - Clic on File menu, Prefrences option and paste the following URL in Additional Boards Manager URLs textbox.
+        ```
+        https://espressif.github.io/arduino-esp32/package_esp32_index.json
+        ```
+    - If previous URLs are present, clic de double square enlarge button and add the URL in a new line.
+    - Clic Ok button.
+    - Clic on Boards Manager icon at left bar.
+    - Search for ESP32 and install **esp32 by Espressif Systems** boards. Around 450 MB will be downlaoded. Installation time depends on your system capabilities and internet speed connection.
+4. Connect an ESP32CAM board already mounted in a USB base or throug a FTDI232 Converter. Connection instructions are in [this file]().
+3. Select ESP32CAM board.
+    - Clic on the *Select Board* drop down menu.
+    - Clic on the *Select other board and port...* option.
+    - Search for AI Thinker ESP32-CAM board.
+
+
+
+
+
+    ## Reference
+
+    - [Arduino 2 Ubuntu Instructios](https://www.youtube.com/watch?v=JeD3nz0__nc)
+    - [Espressif **arduino-esp32** install instructions](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
