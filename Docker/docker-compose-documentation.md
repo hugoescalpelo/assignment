@@ -44,7 +44,7 @@ At this point, CodeProject.AI and MySQL should be running.
 
 If GPU configuration was succesfull, the container creation and execution should lool like this.
 
-![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-06%2022-27-02.png?raw=true)
+![](![Alt text](image.png))
 
 ## Test installation
 
