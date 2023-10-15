@@ -96,4 +96,45 @@ Results
       }
    
 ```
+## Face Recogintion
+This program compares a picture against a facial database. In this case, it compares a picture of Julio Picasso located at **data-visualization/deepface/samples/picasso.jpg** agains a facial database located at **data-visualization/faces/deepface_db**.
 
+Facial databases in **deepface** must be in the following format:
+```
+user
+├── database
+│   ├── Alice
+│   │   ├── Alice1.jpg
+│   │   ├── Alice2.jpg
+│   ├── Bob
+│   │   ├── Bob.jpg
+```
+Images can be provided in many resolutions and extensions. This library does al preprocessing as stated in [this linked](https://sefiks.com/2020/05/01/a-gentle-introduction-to-face-recognition-in-deep-learning/) official article.
+
+You need to update the value of *img_path* and *db_path* variables to the path of the image to be compared and the facial database in this repository in your system, since relative directories are not implemented and different systems may use diferent directory structure.
+
+Open the [face-recognition.py](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/face-recognition.py) program with **Visual Studio Code** and then clic in the **Run** icon or run it in a terminal where the .py is, using the following command.
+```
+python3 face-recognition.py
+```
+Result is a JSON describing similarity
+```
+Results 
+[                                            identity  source_x  source_y  source_w  source_h  VGG-Face_cosine
+0  /home/hugo/Documents/GitHub/data-visualization...       150        80       176       176         0.196844
+1  /home/hugo/Documents/GitHub/data-visualization...       150        80       176       176         0.322810
+2  /home/hugo/Documents/GitHub/data-visualization...       150        80       176       176         0.329939
+3  /home/hugo/Documents/GitHub/data-visualization...       150        80       176       176         0.333634
+4  /home/hugo/Documents/GitHub/data-visualization...       150        80       176       176         0.353396
+5  /home/hugo/Documents/GitHub/data-visualization...       150        80       176       176         0.354483
+6  /home/hugo/Documents/GitHub/data-visualization...       150        80       176       176         0.363258
+7  /home/hugo/Documents/GitHub/data-visualization...       150        80       176       176         0.380001
+8  /home/hugo/Documents/GitHub/data-visualization...       150        80       176       176         0.384998
+9  /home/hugo/Documents/GitHub/data-visualization...       150        80       176       176         0.398913]
+```
+
+An identity, coordinates and deviation index are printed.
+
+### Important!
+
+This program is based in YOLO (You Only Look Once) algorithm and in previous versions of this library, its indexes are stored in a .pkl file in the path of facal database. You have to delete this file everytime you add or delet a face from the facial database.
