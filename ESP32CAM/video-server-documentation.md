@@ -37,7 +37,7 @@ In order to load the program provided in this repository, you need to use Arduin
     - Clic Ok button.
     - Clic on Boards Manager icon at left bar.
     - Search for ESP32 and install **esp32 by Espressif Systems** boards. Around 450 MB will be downlaoded. Installation time depends on your system capabilities and internet speed connection.
-4. Connect an ESP32CAM board already mounted in a USB base or throug a FTDI232 Converter. Connection instructions are in [this file]().
+4. Connect an ESP32CAM board already mounted in a USB base or throug a FTDI232 Converter. Connection instructions are in [this file](https://github.com/hugoescalpelo/data-visualization/blob/main/ESP32CAM/esp32cam-ftdi232-connections.md).
 3. Select ESP32CAM board.
     - Clic on the *Select Board* drop down menu.
     - Clic on the *Select other board and port...* option.
