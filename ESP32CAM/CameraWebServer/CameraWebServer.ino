@@ -35,8 +35,8 @@
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-const char* ssid = "INFINIUMD2AC";
-const char* password = "PCwGdtcV9D";
+const char* ssid = "********";
+const char* password = "********";
 
 // Start the camera
 void startCameraServer();
@@ -90,7 +90,7 @@ void setup() {
       config.grab_mode = CAMERA_GRAB_LATEST;
     } else {
       // Limit the frame size when PSRAM is not available
-      config.frame_size = FRAMESIZE_SVGA;
+      config.frame_size = FRAMESIZE_VGA;
       config.fb_location = CAMERA_FB_IN_DRAM;
     }
   } else {
@@ -122,7 +122,7 @@ void setup() {
   }
   // drop down frame size for higher initial frame rate
   if(config.pixel_format == PIXFORMAT_JPEG){
-    s->set_framesize(s, FRAMESIZE_QVGA);
+    s->set_framesize(s, FRAMESIZE_VGA);
   }
 
 #if defined(CAMERA_MODEL_M5STACK_WIDE) || defined(CAMERA_MODEL_M5STACK_ESP32CAM)
@@ -157,6 +157,10 @@ void setup() {
 }
 
 void loop() {
-  // Do nothing. Everything is done in another task by the web server
-  delay(10000);
+   // put your main code here, to run repeatedly:
+  delay(5000);
+  // if WiFi is down, try reconnecting every CHECK_WIFI_TIME seconds
+  if (WiFi.status() != WL_CONNECTED) {
+    ESP.restart();
+  }
 }
