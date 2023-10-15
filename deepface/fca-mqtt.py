@@ -1,4 +1,4 @@
-# Importar Bilbioteca
+# Import libraries
 from deepface import DeepFace
 import pandas as pd
 from paho.mqtt import client as mqtt_client
@@ -8,15 +8,15 @@ import argparse
 
 # Parser
 parser = argparse.ArgumentParser()
-parser.add_argument("img_src", help="Imagen a buscar en la DB del caras")
-parser.add_argument("db_path", help="Ruta de la base de datos de caras")
+parser.add_argument("img_src", help="Path to image to recognize")
+parser.add_argument("db_path", help="Path to face database")
 args = parser.parse_args()
 
-# Variables y constantes
+# Variables y constants
 broker = '127.0.0.1'
 port = 1883
-topic = "codigoIoT/mqtt/python"
-topic2 = "codigoIoT/mqtt/index"
+topic = "deepface/mqtt/python"
+topic2 = "deepface/mqtt/index"
 # generate client ID with pub prefix randomly
 client_id = f'python-mqtt-{random.randint(0, 1000)}'
 
@@ -48,23 +48,23 @@ def publish(client, mensaje):
     else:
         print(f"Failed to send message to topic {topic}")
 
-### Inicio del programa
-# Buscar Rostro
-print ("Buscando rostro")
+### Program begins
+# Find face
+print ("Finding face")
 
-# df = DeepFace.find(img_path = "img1.jpg", db_path = "C:/workspace/my_db")
+# df = DeepFace.find(img_path = "img1.jpg", db_path = "/home/user/my_db")
 df = DeepFace.find (img_path = args.img_src, db_path = args.db_path, enforce_detection = "false")
-print ("Resultado ")
+print ("Result ")
 print (df)
 #json_view = df.to_json(orient="index")
 #json_view = df.to_json()
 df = pd.concat(df, ignore_index=True)
 json_view = df.to_json()
-print ("La expresion en JSON de los resultados es: ")
+print ("JSON result is: ")
 print (df)
 
 
-# Envio
+# Send
 client = connect_mqtt()
 client.loop_start()
 publish(client, json_view)

@@ -138,3 +138,32 @@ An identity, coordinates and deviation index are printed.
 ### Important!
 
 This program is based in YOLO (You Only Look Once) algorithm and in previous versions of this library, its indexes are stored in a .pkl file in the path of facal database. You have to delete this file everytime you add or delet a face from the facial database.
+
+## Face recognition and results payload to server
+
+This program is based in the prior one. It uses an MQTT Broker to send to the main App server with the difference that accepts *image path* and *facial database path* as arguments.
+
+This instructions assumes you have installed ```paho-mqtt``` and a MQTT broker. Check main README for instructions.
+
+This program uses the same test picture and facial database of prior program. 
+
+To test it, you need an MQTT subscription to the topic stated in de program. The syntax is the following.
+```
+mosquitto_sub -h [host] -t [topic]
+```
+Bellow you can see an example of the command for a mosquitto MQTT Broker running in docker.
+```
+docker exec -it [container-id] mosquitto_sub -h localhost -t deepface/mqtt/python
+```
+The terminal will wait for a message.
+
+You can run the program with the following command.
+```
+python3 fca-mqtt.py [image] [facial database]
+```
+Bellow you can see an example of the terminal command to run this program. Change the path to the program, image and facial database if needed.
+```
+python3 ~/Documents/GitHub/data-visualization/deepface/fca.py ~/Documents/GitHub/data-visualization/deepface/samples/picasso.png ~/Documents/GitHub/data-visualization/faces/deepface_db
+```
+A message with a JSON with all coincidences and alikes will appera in the MQTT subscription window.
+![]()

@@ -36,6 +36,7 @@ Here is a summary of software needed. Read instructions first, sequence and cust
     - [Python Extension - Microsoft](https://github.com/Microsoft/vscode-python). A Visual Studio Code extension with rich support for the Python language.
 - [Docker Engine](https://docs.docker.com/engine/install/ubuntu/). This allow to install with all dependencies provided by publisher.
     - [CodeProject.AI](https://hub.docker.com/r/codeproject/ai-server). This is an AI server for image recognition and will be installed via Docker Compose.
+    - [Mosquitto MQTT](https://mosquitto.org/). An open-source MQTT broker.
 - [Arduino IDE](https://www.arduino.cc/en/software). Is an Integrated Developement Environmet to load software to Arduino and Arduino-based boards.
     - [Espressif ESP32 boards for Arduino](https://github.com/espressif/arduino-esp32). Boards library for ESP32 micro controllers in Arduino.
     - [libfuse2](https://software.opensuse.org/package/libfuse2). A Linux Kernel interface.
@@ -75,11 +76,9 @@ Once an Ubuntu system is set, follow this steps. Linked documentation includes d
 1. Set up GPU. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/CUDA/cuda-toolkit-instructons.md)
 2. Install Docker Engine. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-documentation.md)
 3. Enable GPU Access to containers. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-gpu-documentation.md)
-4. Set the Docker Compose file. This step will install CodeProject.AI and MySQL Server. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-compose-documentation.md)
+4. Set the Docker Compose file. This step will install CodeProject.AI Server, mosquitto and MySQL Server. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-compose-documentation.md)
 
 - Create the MySQL database.
-- Set up CodeProject.AI
-- Install Mosquitto MQTT. [Details]()
 - Install deepface for facial recognition. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md).
 - Program the IP camera. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/ESP32CAM/video-server-documentation.md)
 - Set up deepface. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md).

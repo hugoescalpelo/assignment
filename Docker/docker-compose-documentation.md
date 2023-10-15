@@ -35,6 +35,7 @@ This repository has the YAML file needed to define this portion of the "data-vis
     ```
     cp ~/Documents/GitHub/data-visualization/Mosquitto/mosquitto.conf ~/DockerVolumes/Mosquitto/config/mosquitto.conf
     ```
+    This file ensures basic settings for testing.
 5. Set the terminal to the ```compose.yaml``` file with ```cd ~/DockerCompose``` and run the compose file. This will install or update the containers. This will take some time depending on your connection and systen capabilities.
     ```
     sudo docker compose up -d
@@ -43,6 +44,7 @@ This repository has the YAML file needed to define this portion of the "data-vis
 6. Check the status of your containers with ```sudo docker ps -a```
 
 At this point, CodeProject.AI, mosquitto and MySQL should be running.
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-15%2014-38-11.png?raw=true)
 
 If GPU configuration was succesfull, the container creation and execution should lool like this.
 
@@ -57,10 +59,23 @@ In a browser, open [localhost:32168](http://localhost:32168/). You should see th
 
 ### Mosquitto
 
-Check if mosquitto is running in port 1883. You need net-tools installed
+To check if mosquitto is running you need ```net-tools``` installed. Install it with ```sudo apt install net-tools```. Check if mosquitto is running in port 1883 with following command.
+```
+netstat -an | grep 1883
 ```
 
+To test a connection you will need two terminal windows. 
+
+In the first, make a subscription to a test topic. For this you will need the mosquitto container ID, get it with ```sudo docker ps -a```
 ```
+sudo docker exec -it [container-id] mosquitto_sub -h localhost -t mosquitto/test
+```
+In the secont terminal window, publish with following command.
+```
+sudo docker exec -it [container-id] mosquitto_pub -h localhost -t mosquitto/test -m "Hello Mosquitto"
+```
+
+The message "Hello Mosquitto" will appear in the subscription window.
 ### MySQL
 
 Get into the MySQL CLI:
@@ -68,7 +83,6 @@ Get into the MySQL CLI:
 sudo docker exec -it [id_del_contenedor] mysql -u root -p
 ```
 Use the setted passwrod. Default password is **my-secret-pw**
-
 
 ## Troubleshooting
 
