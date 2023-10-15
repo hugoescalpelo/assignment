@@ -19,7 +19,7 @@ Reboot the system.
 
 Install CUDA Toolkit.
 ```
-sudp apt install nvidia-cuda-toolkit
+sudo apt install nvidia-cuda-toolkit
 ```
 
 Download cuDNN .deb file from [here](https://developer.nvidia.com/rdp/cudnn-download). You will need an Nvidia account. Select the cuDNN version for the appropriate CUDA version, which is the version that appears when you run:
@@ -57,6 +57,7 @@ Turn GPU ON with following command.
 ```
 sudo nvidia-smi -pm 1
 ```
+Run ```nvidia-smi```
 It should  look like this.
 ![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-06%2020-44-59.png?raw=true)
 
