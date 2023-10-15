@@ -36,6 +36,9 @@ Here is a summary of software needed. Read instructions first, sequence and cust
     - [Python Extension - Microsoft](https://github.com/Microsoft/vscode-python). A Visual Studio Code extension with rich support for the Python language.
 - [Docker Engine](https://docs.docker.com/engine/install/ubuntu/). This allow to install with all dependencies provided by publisher.
     - [CodeProject.AI](https://hub.docker.com/r/codeproject/ai-server). This is an AI server for image recognition and will be installed via Docker Compose.
+- [Arduino IDE](https://www.arduino.cc/en/software). Is an Integrated Developement Environmet to load software to Arduino and Arduino-based boards.
+    
+    - 
 - [Python 3](https://www.python.org/). A high-level programming language.
     - [PIP](https://pypi.org/project/pip/). Python package manager.
         - [deepface](https://github.com/serengil/deepface). Facial processing python library.
