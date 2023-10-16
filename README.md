@@ -14,6 +14,8 @@ This repository contains an app that does the following:
     - Compare the captured face to a collection of 40 other people.
     - Display the live camera feed, the extracted face, the top 5 most similar faces from the collection, and a numerical value representing their similarity (recognition score).
 
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-16%2004-01-04.png?raw=true)
+
 ## Quirks and features
 
 This app is developed considering the following:
@@ -92,7 +94,24 @@ I also provide testing instuctions as part of my archive process.
 - [CodeProject.AI basic tests](https://github.com/hugoescalpelo/data-visualization/blob/main/CodeProject.AI/basic-testing.md)
 - [Deepface basic tests](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md   )
 
+## Launching instructions
 
+To launch this App, you need the following:
+
+1. Launch Docker. Provided instructions set Docker to launch at login. Nothing is required. You chan check that mosquitto and CodeProject.AI Server are running with following command.
+    ```
+    sudo docker ps -a
+    ```
+    If containers are not running, start them up with following command.
+    ```
+    docker start $(docker ps -a -q)
+    ```
+2. Energize the ESP32CAM
+3. Run Node-Red with ```node-red```
+4. Open [localhost:1880/ui](http://localhost:1880/ui)
+5. Clic on capture button.
+
+You will see something similar to the first image of this document.
 
 ## Reference
 
