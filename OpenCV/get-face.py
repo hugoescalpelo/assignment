@@ -20,8 +20,8 @@ x_min, x_max, y_min, y_max = args.x_min, args.x_max, args.y_min, args.y_max
 cropped = image[y_min:y_max, x_min:x_max]
 
 # Calculate the new width to maintain proportion with a fixed height of 50 pixels
-new_width = int(50 * (x_max - x_min) / (y_max - y_min))
-new_height = 50  # Fixed height of 50 pixels
+new_width = int(100 * (x_max - x_min) / (y_max - y_min))
+new_height = 100  # Fixed height of 50 pixels
 
 # Resize the image while maintaining the proportion
 resized = cv2.resize(cropped, (new_width, new_height))
