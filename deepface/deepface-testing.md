@@ -104,12 +104,12 @@ Facial databases in **deepface** must be in the following format:
 user
 ├── database
 │   ├── Alice
-│   │   ├── Alice1.jpg
-│   │   ├── Alice2.jpg
+│   │   ├── img01.jpg
+│   │   ├── img02.jpg
 │   ├── Bob
-│   │   ├── Bob.jpg
+│   │   ├── img01.jpg
 ```
-Images can be provided in many resolutions and extensions. This library does al preprocessing as stated in [this linked](https://sefiks.com/2020/05/01/a-gentle-introduction-to-face-recognition-in-deep-learning/) official article.
+Images can be provided in many resolutions and extensions, but is recomended all to have jpg extension so the main app simplifies. This library does al preprocessing as stated in [this linked](https://sefiks.com/2020/05/01/a-gentle-introduction-to-face-recognition-in-deep-learning/) official article.
 
 You need to update the value of *img_path* and *db_path* variables to the path of the image to be compared and the facial database in this repository in your system, since relative directories are not implemented and different systems may use diferent directory structure.
 
@@ -137,7 +137,7 @@ An identity, coordinates and deviation index are printed.
 
 ### Important!
 
-This program is based in YOLO (You Only Look Once) algorithm and in previous versions of this library, its indexes are stored in a .pkl file in the path of facal database. You have to delete this file everytime you add or delet a face from the facial database.
+This program is based in YOLO (You Only Look Once) algorithm and its indexes are stored in a .pkl file in the path of facal database. You have to delete this file **everytime you add or delete a face** from the facial database.
 
 ## Face recognition and results payload to server
 

@@ -10,7 +10,7 @@ Regardless, it can be installed via PIP with the following command, but is not r
 pip install opencv-python
 ```
 
-## Testing
+## Dynamic miniature
 
 OpenCV is used in the **get-face.py** program, wich is a small program used to extract the resulting image of faces that shows similarity with the captured picture by the main App.
 
@@ -20,8 +20,21 @@ This program needs the path to the image to be extracted and the coordinates tha
 ```
 python3 get-face.py [img_path] [x_min] [x_max] [y_min] [y_max]
 ```
-The example comand is bellow. Change the USER value for your user name.
+This program uses a picture located in **/deepface/samples/** path. The example comand is bellow. Change the USER value for your user name.
 ```
-python3 get-face.py /home/hugo/Documents/GitHub/data-visualization/deepface/picasso.png 100 150 100 200
+python3 get-face.py /home/hugo/Documents/GitHub/data-visualization/deepface/samples/picasso.png 180 320 50 300
 ```
 Resulting image is stored in ```/temp``` folder named processed_image.jpg.
+
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/samples/processed_image.jpg?raw=true)
+
+## Batch miniature
+
+OpenCV is used in the **get-minis.py** program, wich is a small program used to generate the miniatures with the extracted faces of each subject in the facial database.
+
+Change the value of ```input_path``` variable to the target facial database folder in order to generate miniatures. 
+
+Run the program with the following command.
+```
+python3 get-minis.py
+```

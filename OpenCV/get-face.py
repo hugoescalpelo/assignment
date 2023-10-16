@@ -27,4 +27,4 @@ new_height = 100  # Fixed height of 50 pixels
 resized = cv2.resize(cropped, (new_width, new_height))
 
 # Save the processed image
-cv2.imwrite('/tmp/processed_image.jpg', resized)
+cv2.imwrite('/home/hugo/Pictures/processed_image01.jpg', resized)
