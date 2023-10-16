@@ -163,7 +163,7 @@ python3 fca-mqtt.py [image] [facial database]
 ```
 Bellow you can see an example of the terminal command to run this program. Change the path to the program, image and facial database if needed.
 ```
-python3 ~/Documents/GitHub/data-visualization/deepface/fca.py ~/Documents/GitHub/data-visualization/deepface/samples/picasso.png ~/Documents/GitHub/data-visualization/faces/deepface_db
+python3 ~/Documents/GitHub/data-visualization/deepface/fca-mqtt.py ~/Documents/GitHub/data-visualization/deepface/samples/picasso.png ~/Documents/GitHub/data-visualization/faces/deepface_db
 ```
 A message with a JSON with all coincidences and alikes will appera in the MQTT subscription window.
-![]()
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-15%2015-28-57.png?raw=true)

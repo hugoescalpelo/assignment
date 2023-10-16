@@ -46,7 +46,8 @@ Here is a summary of software needed. Read instructions first, sequence and cust
 - [Python 3](https://www.python.org/). A high-level programming language.
     - [PIP](https://pypi.org/project/pip/). Python package manager.
         - [deepface](https://github.com/serengil/deepface). Facial processing python library.
-        - [paho-mqtt](pip install paho-mqtt). An M2M protocol library.
+        - [paho-mqtt](https://pypi.org/project/paho-mqtt/). An M2M protocol library.
+        - [OpenCV](https://opencv.org/). OpenCV provides a real-time optimized Computer Vision library.
 - [NodeJS](https://nodejs.org/en). An open-source, cross-platform JavaScript runtime environment..
     - [Node-Red](https://nodered.org/). A programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.
         - [node-red-dashboard](https://flows.nodered.org/node/node-red-dashboard). This module provides a set of nodes in Node-RED to quickly create a live data dashboard. 
@@ -102,11 +103,6 @@ I also provide testing instuctions as part of my archive process.
 - [What does off means in nvidia-smi](https://forums.developer.nvidia.com/t/what-does-off-mean-in-the-output-of-nvidia-smi/37509/3)
 - [GPU Persistance Mode](https://www.microway.com/hpc-tech-tips/nvidia-smi_control-your-gpus/)
 
-<!-- 
-2. Create the needed directories
-3. Install compose
-4. Move the configuration files
-5. Set up nodeRed
-6. Setup  -->
+
 
 
