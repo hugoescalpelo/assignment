@@ -20,7 +20,7 @@
             "05a11a68b5733742"
         ],
         "x": 34,
-        "y": 279,
+        "y": 259,
         "w": 452,
         "h": 82
     },
@@ -63,11 +63,13 @@
             "7e995cb59f7d6127",
             "80cd497a1366595e",
             "fcfe07de4e6eccb7",
-            "de798f2b190316c8"
+            "de798f2b190316c8",
+            "0765c07a1dfd6ef4",
+            "28bd852ee44e0c88"
         ],
         "x": 34,
-        "y": 379,
-        "w": 1112,
+        "y": 359,
+        "w": 1242,
         "h": 169.5
     },
     {
@@ -93,9 +95,65 @@
             "cef438b57e1c1cf3"
         ],
         "x": 34,
-        "y": 579,
+        "y": 1219,
         "w": 1132,
         "h": 282
+    },
+    {
+        "id": "4dfb0d38379b8a64",
+        "type": "group",
+        "z": "3b3c60cac9e15652",
+        "name": "Face Recognition",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9b49b126f83f355d",
+            "60784718ffd306ec",
+            "9af30b6d4ca601dd",
+            "9cd8da9a6de0cdcd",
+            "a5e5916673a80375",
+            "e5b72e25cd78bb7d",
+            "cd4a128cd0e11b83",
+            "56ceb020f19ffac0",
+            "9d043fff577da6ec",
+            "761ce18ca6cfdad7",
+            "dd924cf8512dd8c4",
+            "5570379515d44baa",
+            "bf9bec31fb0ceae3",
+            "374c40aacdf65d27",
+            "7b5ec73e67e16185",
+            "9bc91174259c9001",
+            "4afe932573d519ae",
+            "915da7e840ec73e9",
+            "91c20ce62c52b9b0",
+            "b56707211298279c",
+            "850cc9fcb932b4be",
+            "b041ee0409229bc7",
+            "8f37163a8618ab2e",
+            "f685825e670c696b",
+            "f1afb9d902e82927",
+            "dc8ee26614b371bf",
+            "bd16fcc056ec514c",
+            "8de9bcbffcc5f4a9",
+            "278718f995f8d615",
+            "9ecea7641233009d",
+            "3c504acd944995f6",
+            "c0dbee6ec58911eb",
+            "22a7b8110bb9b353",
+            "a4d1a1d70922da54",
+            "4481469d92557c13",
+            "f3ba3aa27b7f234a",
+            "ad8ba2a9b3f075c8",
+            "1e6bcef6c392d605",
+            "1189b32cec69b016",
+            "424f4c383a7ef5e7",
+            "4643fb195b6bba62"
+        ],
+        "x": 34,
+        "y": 551.5,
+        "w": 1252,
+        "h": 529.5
     },
     {
         "id": "0800c63552c2a05b",
@@ -118,8 +176,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 120,
-        "y": 420,
+        "x": 140,
+        "y": 400,
         "wires": [
             [
                 "303ec5567680214f"
@@ -143,8 +201,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 340,
-        "y": 420,
+        "x": 360,
+        "y": 400,
         "wires": [
             [
                 "7e995cb59f7d6127"
@@ -163,8 +221,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 820,
-        "y": 420,
+        "x": 840,
+        "y": 400,
         "wires": [
             [
                 "80cd497a1366595e"
@@ -194,7 +252,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 150,
-        "y": 320,
+        "y": 300,
         "wires": [
             [
                 "05a11a68b5733742"
@@ -215,7 +273,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 320,
+        "y": 300,
         "wires": [
             []
         ]
@@ -233,8 +291,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
-        "y": 420,
+        "x": 610,
+        "y": 400,
         "wires": [
             [
                 "9bbcf76bb5dc64d0"
@@ -256,7 +314,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "0.3",
+        "repeat": "5",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
@@ -361,23 +419,6 @@
         ]
     },
     {
-        "id": "c63636538ff26163",
-        "type": "debug",
-        "z": "3b3c60cac9e15652",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1220,
-        "y": 280,
-        "wires": []
-    },
-    {
         "id": "a7f42c05b6b950a4",
         "type": "json",
         "z": "3b3c60cac9e15652",
@@ -421,8 +462,8 @@
         "type": "ui_text",
         "z": "3b3c60cac9e15652",
         "g": "ea3d780115fbfa5b",
-        "group": "3a959b147c7b9316",
-        "order": 1,
+        "group": "45493670ebbd75ca",
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
@@ -442,6 +483,7 @@
         "id": "e02f138280eb5849",
         "type": "ui_text_input",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "name": "Path to new face",
         "label": "Path to new face",
@@ -458,7 +500,7 @@
         "className": "",
         "topicType": "msg",
         "x": 150,
-        "y": 620,
+        "y": 1260,
         "wires": [
             [
                 "a0ec45d4bd68b064"
@@ -469,6 +511,7 @@
         "id": "a0ec45d4bd68b064",
         "type": "function",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "name": "path to face register",
         "func": "global.set (\"faceReg\", msg.payload);\nreturn msg;",
@@ -479,7 +522,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 620,
+        "y": 1260,
         "wires": [
             []
         ]
@@ -488,6 +531,7 @@
         "id": "70945f2165e235ce",
         "type": "ui_text_input",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "name": "Name of new face",
         "label": "Name of new face",
@@ -504,7 +548,7 @@
         "className": "",
         "topicType": "msg",
         "x": 150,
-        "y": 680,
+        "y": 1320,
         "wires": [
             [
                 "2568df0b7818cd8e"
@@ -515,6 +559,7 @@
         "id": "2568df0b7818cd8e",
         "type": "function",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "name": "name to face register",
         "func": "global.set (\"nameReg\", msg.payload);\nreturn msg;",
@@ -525,7 +570,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 680,
+        "y": 1320,
         "wires": [
             []
         ]
@@ -534,6 +579,7 @@
         "id": "9a759f9de9e0649b",
         "type": "ui_button",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "name": "",
         "group": "d8380dafa5eff9d1",
@@ -552,7 +598,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 120,
-        "y": 740,
+        "y": 1380,
         "wires": [
             [
                 "ac9fe3658cd3173c"
@@ -563,6 +609,7 @@
         "id": "ac9fe3658cd3173c",
         "type": "function",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "name": "generate curl",
         "func": "msg.payload = \"curl --location 'http://localhost:32168/v1/vision/face/register' --form 'imageN=@\\\"\" + global.get(\"faceReg\") + \"\\\"' --form 'userid=\\\"\"+ global.get (\"nameReg\") +\"\\\"'\";\nreturn msg;",
@@ -573,7 +620,7 @@
         "finalize": "",
         "libs": [],
         "x": 350,
-        "y": 740,
+        "y": 1380,
         "wires": [
             [
                 "4fae02c2715ad332"
@@ -584,6 +631,7 @@
         "id": "4fae02c2715ad332",
         "type": "exec",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "command": "",
         "addpay": "payload",
@@ -594,7 +642,7 @@
         "oldrc": false,
         "name": "Register a face",
         "x": 600,
-        "y": 740,
+        "y": 1380,
         "wires": [
             [
                 "898cad28233922d9"
@@ -607,13 +655,14 @@
         "id": "898cad28233922d9",
         "type": "json",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "name": "",
         "property": "payload",
         "action": "obj",
         "pretty": false,
         "x": 810,
-        "y": 740,
+        "y": 1380,
         "wires": [
             [
                 "6686f8b781f90369"
@@ -624,6 +673,7 @@
         "id": "6686f8b781f90369",
         "type": "function",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "name": "Check success",
         "func": "if (msg.payload.success == true)\n{\n    msg.payload = \"Succes! Face registered\";\n} else {\n    msg.payload = \"Something went wrong!\";\n}\nreturn msg;",
@@ -634,7 +684,7 @@
         "finalize": "",
         "libs": [],
         "x": 1060,
-        "y": 740,
+        "y": 1380,
         "wires": [
             [
                 "4a6c16a5c34bd284",
@@ -646,6 +696,7 @@
         "id": "4a6c16a5c34bd284",
         "type": "ui_text",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "group": "d8380dafa5eff9d1",
         "order": 4,
@@ -661,13 +712,14 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 810,
-        "y": 820,
+        "y": 1460,
         "wires": []
     },
     {
         "id": "d5f8c86cd20a30fa",
         "type": "delay",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "name": "",
         "pauseType": "delay",
@@ -683,7 +735,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 340,
-        "y": 820,
+        "y": 1460,
         "wires": [
             [
                 "cef438b57e1c1cf3"
@@ -694,6 +746,7 @@
         "id": "cef438b57e1c1cf3",
         "type": "change",
         "z": "3b3c60cac9e15652",
+        "d": true,
         "g": "7b4499f4ca4d2a7b",
         "name": "",
         "rules": [
@@ -711,7 +764,7 @@
         "to": "",
         "reg": false,
         "x": 600,
-        "y": 820,
+        "y": 1460,
         "wires": [
             [
                 "4a6c16a5c34bd284"
@@ -736,11 +789,12 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1050,
-        "y": 420,
+        "x": 1070,
+        "y": 400,
         "wires": [
             [
-                "de798f2b190316c8"
+                "de798f2b190316c8",
+                "0765c07a1dfd6ef4"
             ]
         ]
     },
@@ -757,8 +811,8 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 570,
-        "y": 500,
+        "x": 690,
+        "y": 480,
         "wires": [
             [],
             [],
@@ -778,8 +832,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
-        "y": 500,
+        "x": 400,
+        "y": 480,
         "wires": [
             [
                 "fcfe07de4e6eccb7"
@@ -809,33 +863,962 @@
         ]
     },
     {
+        "id": "0765c07a1dfd6ef4",
+        "type": "link out",
+        "z": "3b3c60cac9e15652",
+        "g": "e207b0ca8ceee3d3",
+        "name": "Compare40 Tx",
+        "mode": "link",
+        "links": [
+            "9b49b126f83f355d"
+        ],
+        "x": 1235,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "9b49b126f83f355d",
+        "type": "link in",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "Compare40 Rx",
+        "links": [
+            "0765c07a1dfd6ef4"
+        ],
+        "x": 75,
+        "y": 600,
+        "wires": [
+            [
+                "60784718ffd306ec"
+            ]
+        ]
+    },
+    {
+        "id": "60784718ffd306ec",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "Compare command",
+        "func": "msg.payload = \"python3 ~/Documents/GitHub/data-visualization/deepface/fca-mqtt.py \" + msg.filename + \" ~/Documents/GitHub/data-visualization/faces/deepface_db\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 600,
+        "wires": [
+            [
+                "9af30b6d4ca601dd"
+            ]
+        ]
+    },
+    {
+        "id": "9af30b6d4ca601dd",
+        "type": "exec",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 530,
+        "y": 600,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9cd8da9a6de0cdcd",
+        "type": "mqtt in",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "Results",
+        "topic": "deepface/mqtt/python",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "78c4e9e81da0615d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 660,
+        "wires": [
+            [
+                "a5e5916673a80375",
+                "e5b72e25cd78bb7d",
+                "cd4a128cd0e11b83",
+                "56ceb020f19ffac0",
+                "9d043fff577da6ec",
+                "dc8ee26614b371bf"
+            ]
+        ]
+    },
+    {
+        "id": "a5e5916673a80375",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 1",
+        "func": "var input = msg.payload.identity[\"0\"];\n\nif (input) {\n    var lastIndex = input.lastIndexOf('/');\n    if (lastIndex >= 0) {\n        var trimmedString = input.substring(0, lastIndex + 1); // Include the last slash\n        var alike = (1 - msg.payload[\"VGG-Face_cosine\"][\"0\"]) * 100;\n        \n        // Round 'alike' to the nearest integer\n        var roundedAlike = Math.round(alike);\n        \n        // Add a percentage symbol to 'roundedAlike'\n        var alikeWithPercentage = roundedAlike + '%';\n        \n        msg.alike = alikeWithPercentage;\n        msg.filename = trimmedString + \"info.json\";\n    } else {\n        msg.payload = \"Invalid Path\"; // No slash found, keep the original string\n    }\n} else {\n    msg.payload = 0;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 660,
+        "wires": [
+            [
+                "c0dbee6ec58911eb"
+            ]
+        ]
+    },
+    {
+        "id": "e5b72e25cd78bb7d",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 2",
+        "func": "var input = msg.payload.identity[\"1\"];\n\nif (input) {\n    var lastIndex = input.lastIndexOf('/');\n    if (lastIndex >= 0) {\n        var trimmedString = input.substring(0, lastIndex + 1); // Include the last slash\n        var alike = (1 - msg.payload[\"VGG-Face_cosine\"][\"1\"]) * 100;\n        \n        // Round 'alike' to the nearest integer\n        var roundedAlike = Math.round(alike);\n        \n        // Add a percentage symbol to 'roundedAlike'\n        var alikeWithPercentage = roundedAlike + '%';\n        \n        msg.alike = alikeWithPercentage;\n        msg.filename = trimmedString + \"info.json\";\n    } else {\n        msg.payload = \"Invalid Path\"; // No slash found, keep the original string\n    }\n} else {\n    msg.payload = \"0\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 740,
+        "wires": [
+            [
+                "a4d1a1d70922da54"
+            ]
+        ]
+    },
+    {
+        "id": "cd4a128cd0e11b83",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 3",
+        "func": "var input = msg.payload.identity[\"2\"];\n\nif (input) {\n    var lastIndex = input.lastIndexOf('/');\n    if (lastIndex >= 0) {\n        var trimmedString = input.substring(0, lastIndex + 1); // Include the last slash\n        var alike = (1 - msg.payload[\"VGG-Face_cosine\"][\"2\"]) * 100;\n        \n        // Round 'alike' to the nearest integer\n        var roundedAlike = Math.round(alike);\n        \n        // Add a percentage symbol to 'roundedAlike'\n        var alikeWithPercentage = roundedAlike + '%';\n        \n        msg.alike = alikeWithPercentage;\n        msg.filename = trimmedString + \"info.json\";\n    } else {\n        msg.payload = \"Invalid Path\"; // No slash found, keep the original string\n    }\n} else {\n    msg.payload = \"0\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 820,
+        "wires": [
+            [
+                "f3ba3aa27b7f234a"
+            ]
+        ]
+    },
+    {
+        "id": "56ceb020f19ffac0",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 4",
+        "func": "var input = msg.payload.identity[\"3\"];\n\nif (input) {\n    var lastIndex = input.lastIndexOf('/');\n    if (lastIndex >= 0) {\n        var trimmedString = input.substring(0, lastIndex + 1); // Include the last slash\n        var alike = (1 - msg.payload[\"VGG-Face_cosine\"][\"3\"]) * 100;\n        \n        // Round 'alike' to the nearest integer\n        var roundedAlike = Math.round(alike);\n        \n        // Add a percentage symbol to 'roundedAlike'\n        var alikeWithPercentage = roundedAlike + '%';\n        \n        msg.alike = alikeWithPercentage;\n        msg.filename = trimmedString + \"info.json\";\n    } else {\n        msg.payload = \"Invalid Path\"; // No slash found, keep the original string\n    }\n} else {\n    msg.payload = \"0\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 900,
+        "wires": [
+            [
+                "1e6bcef6c392d605"
+            ]
+        ]
+    },
+    {
+        "id": "9d043fff577da6ec",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 5",
+        "func": "var input = msg.payload.identity[\"4\"];\n\nif (input) {\n    var lastIndex = input.lastIndexOf('/');\n    if (lastIndex >= 0) {\n        var trimmedString = input.substring(0, lastIndex + 1); // Include the last slash\n        var alike = (1 - msg.payload[\"VGG-Face_cosine\"][\"4\"]) * 100;\n        \n        // Round 'alike' to the nearest integer\n        var roundedAlike = Math.round(alike);\n        \n        // Add a percentage symbol to 'roundedAlike'\n        var alikeWithPercentage = roundedAlike + '%';\n        \n        msg.alike = alikeWithPercentage;\n        msg.filename = trimmedString + \"info.json\";\n    } else {\n        msg.payload = \"Invalid Path\"; // No slash found, keep the original string\n    }\n} else {\n    msg.payload = \"0\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 980,
+        "wires": [
+            [
+                "424f4c383a7ef5e7"
+            ]
+        ]
+    },
+    {
+        "id": "761ce18ca6cfdad7",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "group": "9e639269c77b9c9d",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <tr>\n        <td>{{msg.name}}</td>\n        <td>{{msg.description}}</td>\n        <td>{{msg.alike}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"80\" ></td>\n    </tr>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1180,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd924cf8512dd8c4",
+        "type": "file in",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 680,
+        "y": 660,
+        "wires": [
+            [
+                "5570379515d44baa"
+            ]
+        ]
+    },
+    {
+        "id": "5570379515d44baa",
+        "type": "json",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 830,
+        "y": 660,
+        "wires": [
+            [
+                "bf9bec31fb0ceae3"
+            ]
+        ]
+    },
+    {
+        "id": "bf9bec31fb0ceae3",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 6",
+        "func": "msg.name = msg.payload.name;\nmsg.description = msg.payload.description;\nvar filename = msg.filename;\nvar lastIndex = filename.lastIndexOf('/');\nvar secondLastIndex = filename.lastIndexOf('/', lastIndex - 1); // Find the second-to-last slash\n\nif (secondLastIndex >= 0) {\n    var trimmedFilename = filename.substring(secondLastIndex + 1, lastIndex); // Include the second-to-last slash, exclude the last slash\n    msg.filename = \"https://raw.githubusercontent.com/hugoescalpelo/data-visualization/main/faces/deepface_db/\" + trimmedFilename + '/face.jpg'; // Add '/face.jpg' after the trimmed part\n}\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 660,
+        "wires": [
+            [
+                "761ce18ca6cfdad7",
+                "bd16fcc056ec514c"
+            ]
+        ]
+    },
+    {
+        "id": "374c40aacdf65d27",
+        "type": "file in",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 680,
+        "y": 740,
+        "wires": [
+            [
+                "7b5ec73e67e16185"
+            ]
+        ]
+    },
+    {
+        "id": "7b5ec73e67e16185",
+        "type": "json",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 830,
+        "y": 740,
+        "wires": [
+            [
+                "3c504acd944995f6"
+            ]
+        ]
+    },
+    {
+        "id": "9bc91174259c9001",
+        "type": "file in",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 680,
+        "y": 820,
+        "wires": [
+            [
+                "4afe932573d519ae"
+            ]
+        ]
+    },
+    {
+        "id": "4afe932573d519ae",
+        "type": "json",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 830,
+        "y": 820,
+        "wires": [
+            [
+                "9ecea7641233009d"
+            ]
+        ]
+    },
+    {
+        "id": "915da7e840ec73e9",
+        "type": "file in",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 680,
+        "y": 900,
+        "wires": [
+            [
+                "91c20ce62c52b9b0"
+            ]
+        ]
+    },
+    {
+        "id": "91c20ce62c52b9b0",
+        "type": "json",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 830,
+        "y": 900,
+        "wires": [
+            [
+                "278718f995f8d615"
+            ]
+        ]
+    },
+    {
+        "id": "b56707211298279c",
+        "type": "file in",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 680,
+        "y": 980,
+        "wires": [
+            [
+                "850cc9fcb932b4be"
+            ]
+        ]
+    },
+    {
+        "id": "850cc9fcb932b4be",
+        "type": "json",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 830,
+        "y": 980,
+        "wires": [
+            [
+                "8de9bcbffcc5f4a9"
+            ]
+        ]
+    },
+    {
+        "id": "b041ee0409229bc7",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "group": "9e639269c77b9c9d",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <tr>\n        <td>{{msg.name}}</td>\n        <td>{{msg.description}}</td>\n        <td>{{msg.alike}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"80\" ></td>\n    </tr>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1180,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f37163a8618ab2e",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "group": "9e639269c77b9c9d",
+        "name": "",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <tr>\n        <td>{{msg.name}}</td>\n        <td>{{msg.description}}</td>\n        <td>{{msg.alike}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"80\" ></td>\n    </tr>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1180,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f685825e670c696b",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "group": "9e639269c77b9c9d",
+        "name": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <tr>\n        <td>{{msg.name}}</td>\n        <td>{{msg.description}}</td>\n        <td>{{msg.alike}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"80\" ></td>\n    </tr>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1180,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1afb9d902e82927",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "group": "9e639269c77b9c9d",
+        "name": "",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <tr>\n        <td>{{msg.name}}</td>\n        <td>{{msg.description}}</td>\n        <td>{{msg.alike}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"80\" ></td>\n    </tr>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1180,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc8ee26614b371bf",
+        "type": "debug",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "bd16fcc056ec514c",
+        "type": "debug",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "8de9bcbffcc5f4a9",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 10",
+        "func": "msg.name = msg.payload.name;\nmsg.description = msg.payload.description;\nvar filename = msg.filename;\nvar lastIndex = filename.lastIndexOf('/');\nvar secondLastIndex = filename.lastIndexOf('/', lastIndex - 1); // Find the second-to-last slash\n\nif (secondLastIndex >= 0) {\n    var trimmedFilename = filename.substring(secondLastIndex + 1, lastIndex); // Include the second-to-last slash, exclude the last slash\n    msg.filename = \"https://raw.githubusercontent.com/hugoescalpelo/data-visualization/main/faces/deepface_db/\" + trimmedFilename + '/face.jpg'; // Add '/face.jpg' after the trimmed part\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 990,
+        "y": 980,
+        "wires": [
+            [
+                "f1afb9d902e82927"
+            ]
+        ]
+    },
+    {
+        "id": "278718f995f8d615",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 9",
+        "func": "msg.name = msg.payload.name;\nmsg.description = msg.payload.description;\nvar filename = msg.filename;\nvar lastIndex = filename.lastIndexOf('/');\nvar secondLastIndex = filename.lastIndexOf('/', lastIndex - 1); // Find the second-to-last slash\n\nif (secondLastIndex >= 0) {\n    var trimmedFilename = filename.substring(secondLastIndex + 1, lastIndex); // Include the second-to-last slash, exclude the last slash\n    msg.filename = \"https://raw.githubusercontent.com/hugoescalpelo/data-visualization/main/faces/deepface_db/\" + trimmedFilename + '/face.jpg'; // Add '/face.jpg' after the trimmed part\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 900,
+        "wires": [
+            [
+                "f685825e670c696b"
+            ]
+        ]
+    },
+    {
+        "id": "9ecea7641233009d",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 8",
+        "func": "msg.name = msg.payload.name;\nmsg.description = msg.payload.description;\nvar filename = msg.filename;\nvar lastIndex = filename.lastIndexOf('/');\nvar secondLastIndex = filename.lastIndexOf('/', lastIndex - 1); // Find the second-to-last slash\n\nif (secondLastIndex >= 0) {\n    var trimmedFilename = filename.substring(secondLastIndex + 1, lastIndex); // Include the second-to-last slash, exclude the last slash\n    msg.filename = \"https://raw.githubusercontent.com/hugoescalpelo/data-visualization/main/faces/deepface_db/\" + trimmedFilename + '/face.jpg'; // Add '/face.jpg' after the trimmed part\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 820,
+        "wires": [
+            [
+                "8f37163a8618ab2e"
+            ]
+        ]
+    },
+    {
+        "id": "3c504acd944995f6",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 7",
+        "func": "msg.name = msg.payload.name;\nmsg.description = msg.payload.description;\nvar filename = msg.filename;\nvar lastIndex = filename.lastIndexOf('/');\nvar secondLastIndex = filename.lastIndexOf('/', lastIndex - 1); // Find the second-to-last slash\n\nif (secondLastIndex >= 0) {\n    var trimmedFilename = filename.substring(secondLastIndex + 1, lastIndex); // Include the second-to-last slash, exclude the last slash\n    msg.filename = \"https://raw.githubusercontent.com/hugoescalpelo/data-visualization/main/faces/deepface_db/\" + trimmedFilename + '/face.jpg'; // Add '/face.jpg' after the trimmed part\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 740,
+        "wires": [
+            [
+                "b041ee0409229bc7"
+            ]
+        ]
+    },
+    {
+        "id": "c0dbee6ec58911eb",
+        "type": "switch",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 660,
+        "wires": [
+            [
+                "dd924cf8512dd8c4"
+            ],
+            [
+                "22a7b8110bb9b353"
+            ]
+        ]
+    },
+    {
+        "id": "22a7b8110bb9b353",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 11",
+        "func": "msg.name = \"N/A\";\nmsg.description = \"N/A\";\nmsg.filename = \"https://raw.githubusercontent.com/hugoescalpelo/data-visualization/main/deepface/samples/blank.png\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 700,
+        "wires": [
+            [
+                "761ce18ca6cfdad7"
+            ]
+        ]
+    },
+    {
+        "id": "a4d1a1d70922da54",
+        "type": "switch",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 740,
+        "wires": [
+            [
+                "374c40aacdf65d27"
+            ],
+            [
+                "4481469d92557c13"
+            ]
+        ]
+    },
+    {
+        "id": "4481469d92557c13",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 12",
+        "func": "msg.name = \"N/A\";\nmsg.description = \"N/A\";\nmsg.filename = \"https://raw.githubusercontent.com/hugoescalpelo/data-visualization/main/deepface/samples/blank.png\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 780,
+        "wires": [
+            [
+                "b041ee0409229bc7"
+            ]
+        ]
+    },
+    {
+        "id": "f3ba3aa27b7f234a",
+        "type": "switch",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 820,
+        "wires": [
+            [
+                "9bc91174259c9001"
+            ],
+            [
+                "ad8ba2a9b3f075c8"
+            ]
+        ]
+    },
+    {
+        "id": "ad8ba2a9b3f075c8",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 13",
+        "func": "msg.name = \"N/A\";\nmsg.description = \"N/A\";\nmsg.filename = \"https://raw.githubusercontent.com/hugoescalpelo/data-visualization/main/deepface/samples/blank.png\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 860,
+        "wires": [
+            [
+                "8f37163a8618ab2e"
+            ]
+        ]
+    },
+    {
+        "id": "1e6bcef6c392d605",
+        "type": "switch",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 900,
+        "wires": [
+            [
+                "915da7e840ec73e9"
+            ],
+            [
+                "1189b32cec69b016"
+            ]
+        ]
+    },
+    {
+        "id": "1189b32cec69b016",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 14",
+        "func": "msg.name = \"N/A\";\nmsg.description = \"N/A\";\nmsg.filename = \"https://raw.githubusercontent.com/hugoescalpelo/data-visualization/main/deepface/samples/blank.png\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 940,
+        "wires": [
+            [
+                "f685825e670c696b"
+            ]
+        ]
+    },
+    {
+        "id": "424f4c383a7ef5e7",
+        "type": "switch",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 510,
+        "y": 980,
+        "wires": [
+            [
+                "b56707211298279c"
+            ],
+            [
+                "4643fb195b6bba62"
+            ]
+        ]
+    },
+    {
+        "id": "4643fb195b6bba62",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4dfb0d38379b8a64",
+        "name": "function 15",
+        "func": "msg.name = \"N/A\";\nmsg.description = \"N/A\";\nmsg.filename = \"https://raw.githubusercontent.com/hugoescalpelo/data-visualization/main/deepface/samples/blank.png\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1020,
+        "wires": [
+            [
+                "f1afb9d902e82927"
+            ]
+        ]
+    },
+    {
+        "id": "28bd852ee44e0c88",
+        "type": "inject",
+        "z": "3b3c60cac9e15652",
+        "g": "e207b0ca8ceee3d3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 460,
+        "wires": [
+            [
+                "303ec5567680214f"
+            ]
+        ]
+    },
+    {
         "id": "9e639269c77b9c9d",
         "type": "ui_group",
         "name": "Capture",
         "tab": "6b84b172526fb6d5",
         "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "3a959b147c7b9316",
-        "type": "ui_group",
-        "name": "Data",
-        "tab": "6b84b172526fb6d5",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "d8380dafa5eff9d1",
-        "type": "ui_group",
-        "name": "Face Registration",
-        "tab": "6b84b172526fb6d5",
-        "order": 4,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -851,6 +1834,48 @@
         "width": "12",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "d8380dafa5eff9d1",
+        "type": "ui_group",
+        "name": "Face Registration",
+        "tab": "6b84b172526fb6d5",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "78c4e9e81da0615d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
     },
     {
         "id": "6b84b172526fb6d5",
