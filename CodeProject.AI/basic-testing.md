@@ -46,4 +46,9 @@ The results are the following.
 
 In the Image tab, in the Optical Character Recognition Group, clic on the Browse Button in the **Image** field, select an image, and then clic con the **Read Text** button. 
 
-In this example we compare to a [picture of me holding]() a white card
+In this example we compare to a [picture of me](hhttps://github.com/hugoescalpelo/data-visualization/blob/main/faces/test_faces/hugo2.jpg?raw=true)holding a white card.
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/faces/test_faces/hugo2.jpg?raw=true)
+
+The result of this test looks like this
+![]()
+**Note**:To run this test, you need to [install OCR Module](https://github.com/hugoescalpelo/data-visualization/blob/main/CodeProject.AI/ocr-settings.md) first.
