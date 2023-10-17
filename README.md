@@ -16,6 +16,16 @@ This repository contains an app that does the following:
 
 ![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-16%2004-01-04.png?raw=true)
 
+2. Image Processing + OCR (Optical Character Recognition)
+
+    **Objective**: Develop an application that uses a live webcam feed to capture text from objects such as product labels, book titles, and packaging.
+
+    **Requirements**:
+    - Extract subsections of the image where text is detected.
+    - Convert the extracted image text to unicode characters using OCR. 
+    - Display the results on the screen, stacking them akin to a table format that juxtaposes the cropped images and their corresponding unicode text.
+
+
 ## Quirks and features
 
 This app is developed considering the following:
@@ -80,8 +90,7 @@ Once an Ubuntu system is set, follow this steps. Linked documentation includes d
 2. Install Docker Engine. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-documentation.md)
 3. Enable GPU Access to containers. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-gpu-documentation.md)
 4. Set the Docker Compose file. This step will install CodeProject.AI Server, mosquitto and MySQL Server. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-compose-documentation.md)
-
-- Create the MySQL database.
+- Configure CodeProject.AI Server for OCR. [Details]()
 - Install deepface for facial recognition. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md).
 - Program the IP camera. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/ESP32CAM/video-server-documentation.md)
 - Set up deepface. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md).
