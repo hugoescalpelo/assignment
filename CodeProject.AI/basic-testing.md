@@ -34,10 +34,16 @@ You can also list registered faces by clicking on the List Registered Faces in F
 
 ### Face Recognition
 
-In the Face tab, in the Face Recognition Group, clic on the Browse button in the **Image** field and then clic on the **Recognize** button. You can also change the confidence of the algorithm in the **Minimum Recognition Confidence** field by setting a number between 0.0 and 1.0, equivalent to 0% confidence and 100% confidence respectively.
+In the Face tab, in the Face Recognition Group, clic on the Browse button in the **Image** field, select an image and then clic on the **Recognize** button. You can also change the confidence of the algorithm in the **Minimum Recognition Confidence** field by setting a number between 0.0 and 1.0, equivalent to 0% confidence and 100% confidence respectively.
 
 In this example we compare Spielbergs registered face with [a second one](https://github.com/hugoescalpelo/data-visualization/blob/main/faces/test_faces/spielberg2.png).
 
 The results are the following.
 
 ![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-10%2017-51-23.png?raw=true)
+
+## Optic Character Recognition
+
+In the Image tab, in the Optical Character Recognition Group, clic on the Browse Button in the **Image** field, select an image, and then clic con the **Read Text** button. 
+
+In this example we compare to a [picture of me holding]() a white card
