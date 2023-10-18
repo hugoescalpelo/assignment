@@ -52,6 +52,8 @@ The aplication is provided in this repository as a JSON file.
     - The **http request** node called **Get photo** in the Capture Photo Group. Update the URL to your IP camera capture picture URL, be sure Method field is set to **GET** and return field is set to **a binary buffer**.
     - The **function** node called **Add name** in the Capture Photo group. Update the string assigned to *msg.filename* to have an absolute path to where the Photos will be saved when an user clics on the *Capture* button.
     - The **MQTT in** node in the *Face recognition* group. Set the host of the MQTT broker to the broker you are using. If you installed Mosquitto via Docker Compose, no changes are needed.
+    - The **function** node called **function 17** in the *local Image Server* group. Update the URL of the path to match your user.
+    - Every **exec** node in the *OCR* group to match your user.
 
 ## Reference
 

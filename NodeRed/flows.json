@@ -45,7 +45,7 @@
         ],
         "x": 34,
         "y": 31.5,
-        "w": 1092,
+        "w": 1112,
         "h": 209.5
     },
     {
@@ -95,7 +95,7 @@
             "cef438b57e1c1cf3"
         ],
         "x": 34,
-        "y": 1219,
+        "y": 1919,
         "w": 1132,
         "h": 282
     },
@@ -133,8 +133,6 @@
             "8f37163a8618ab2e",
             "f685825e670c696b",
             "f1afb9d902e82927",
-            "dc8ee26614b371bf",
-            "bd16fcc056ec514c",
             "8de9bcbffcc5f4a9",
             "278718f995f8d615",
             "9ecea7641233009d",
@@ -152,8 +150,267 @@
         ],
         "x": 34,
         "y": 551.5,
+        "w": 1232,
+        "h": 509.5
+    },
+    {
+        "id": "4036ea1e0eebbcce",
+        "type": "group",
+        "z": "3b3c60cac9e15652",
+        "name": "Local image server",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "97b54477ac8b5b3f",
+            "242167a0d62d3ce0",
+            "efec9f13de776c17",
+            "2038deced828d37b"
+        ],
+        "x": 34,
+        "y": 1099,
+        "w": 712,
+        "h": 82
+    },
+    {
+        "id": "fae4d768ecaa3b3c",
+        "type": "group",
+        "z": "3b3c60cac9e15652",
+        "name": "OCR",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "47c2aa63e8ab775e",
+            "8eebe6a15256e515",
+            "80bbceddac2ccc5c",
+            "1851747b5f45602d",
+            "37aeb6dd30288d6b",
+            "106cae68185afecc",
+            "4850aa3fba0681b7",
+            "bbf0910d80e9ff02",
+            "038484f0451b6349",
+            "d0e6cd88d3e557b1",
+            "8afe2b068854efb7",
+            "12c5959bba524e90",
+            "dfc4f0b3a08e3bf1",
+            "df7528d7d2a24682",
+            "51508ad4e8911624",
+            "8b1f03330f090760",
+            "c51080e1b0fbbe21",
+            "4ff6608a603d4539",
+            "6745bd0b2f37a188",
+            "403148938b38912c",
+            "01e3e08f3de5d01a",
+            "07cfc4b1cc097c34",
+            "e7370728ed95987a",
+            "4bac0356fc87e52c",
+            "2fa1bd93acdadd4f",
+            "33295b795b946d33",
+            "a8379d11bfd868b8",
+            "455e059c42cdf68d",
+            "56c780d43543e03a",
+            "eea46537294a2d58",
+            "13da289f2e9dfedb",
+            "7555773de5458357",
+            "c95872691031343b",
+            "9bb1c7d21c37b0ed",
+            "ed3dd00a980b912e"
+        ],
+        "x": 34,
+        "y": 1211.5,
         "w": 1252,
         "h": 529.5
+    },
+    {
+        "id": "45493670ebbd75ca",
+        "type": "ui_group",
+        "name": "View",
+        "tab": "6b84b172526fb6d5",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6b84b172526fb6d5",
+        "type": "ui_tab",
+        "name": "Facial Recognition",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e6cf0a7d7ce14d41",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#613583",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#613583",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#613583",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#894db7",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#613583",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "9e639269c77b9c9d",
+        "type": "ui_group",
+        "name": "Facial Recognition",
+        "tab": "6b84b172526fb6d5",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d8380dafa5eff9d1",
+        "type": "ui_group",
+        "name": "Face Registration",
+        "tab": "6b84b172526fb6d5",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "78c4e9e81da0615d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e6bb8dbef78e3b7e",
+        "type": "ui_group",
+        "name": "OCR",
+        "tab": "6b84b172526fb6d5",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8635f24bab9a1c42",
+        "type": "ui_link",
+        "name": "Link 2",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 2
     },
     {
         "id": "0800c63552c2a05b",
@@ -161,10 +418,10 @@
         "z": "3b3c60cac9e15652",
         "g": "e207b0ca8ceee3d3",
         "name": "",
-        "group": "9e639269c77b9c9d",
-        "order": 1,
-        "width": 0,
-        "height": 0,
+        "group": "45493670ebbd75ca",
+        "order": 3,
+        "width": 3,
+        "height": 1,
         "passthru": false,
         "label": "Capture",
         "tooltip": "",
@@ -201,7 +458,7 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 360,
+        "x": 340,
         "y": 400,
         "wires": [
             [
@@ -221,7 +478,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 840,
+        "x": 820,
         "y": 400,
         "wires": [
             [
@@ -291,7 +548,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
+        "x": 590,
         "y": 400,
         "wires": [
             [
@@ -314,7 +571,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "5",
+        "repeat": "1",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
@@ -408,7 +665,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "curl call",
-        "x": 1040,
+        "x": 1060,
         "y": 80,
         "wires": [
             [
@@ -464,8 +721,8 @@
         "g": "ea3d780115fbfa5b",
         "group": "45493670ebbd75ca",
         "order": 2,
-        "width": 0,
-        "height": 0,
+        "width": 9,
+        "height": 1,
         "name": "",
         "label": "Show coordinates",
         "format": "{{msg.payload}}",
@@ -500,7 +757,7 @@
         "className": "",
         "topicType": "msg",
         "x": 150,
-        "y": 1260,
+        "y": 1960,
         "wires": [
             [
                 "a0ec45d4bd68b064"
@@ -522,7 +779,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 1260,
+        "y": 1960,
         "wires": [
             []
         ]
@@ -548,7 +805,7 @@
         "className": "",
         "topicType": "msg",
         "x": 150,
-        "y": 1320,
+        "y": 2020,
         "wires": [
             [
                 "2568df0b7818cd8e"
@@ -570,7 +827,7 @@
         "finalize": "",
         "libs": [],
         "x": 380,
-        "y": 1320,
+        "y": 2020,
         "wires": [
             []
         ]
@@ -598,7 +855,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 120,
-        "y": 1380,
+        "y": 2080,
         "wires": [
             [
                 "ac9fe3658cd3173c"
@@ -620,7 +877,7 @@
         "finalize": "",
         "libs": [],
         "x": 350,
-        "y": 1380,
+        "y": 2080,
         "wires": [
             [
                 "4fae02c2715ad332"
@@ -642,7 +899,7 @@
         "oldrc": false,
         "name": "Register a face",
         "x": 600,
-        "y": 1380,
+        "y": 2080,
         "wires": [
             [
                 "898cad28233922d9"
@@ -662,7 +919,7 @@
         "action": "obj",
         "pretty": false,
         "x": 810,
-        "y": 1380,
+        "y": 2080,
         "wires": [
             [
                 "6686f8b781f90369"
@@ -684,7 +941,7 @@
         "finalize": "",
         "libs": [],
         "x": 1060,
-        "y": 1380,
+        "y": 2080,
         "wires": [
             [
                 "4a6c16a5c34bd284",
@@ -712,7 +969,7 @@
         "fontSize": 16,
         "color": "#000000",
         "x": 810,
-        "y": 1460,
+        "y": 2160,
         "wires": []
     },
     {
@@ -735,7 +992,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 340,
-        "y": 1460,
+        "y": 2160,
         "wires": [
             [
                 "cef438b57e1c1cf3"
@@ -764,7 +1021,7 @@
         "to": "",
         "reg": false,
         "x": 600,
-        "y": 1460,
+        "y": 2160,
         "wires": [
             [
                 "4a6c16a5c34bd284"
@@ -811,7 +1068,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 690,
+        "x": 570,
         "y": 480,
         "wires": [
             [],
@@ -832,7 +1089,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
+        "x": 380,
         "y": 480,
         "wires": [
             [
@@ -927,7 +1184,7 @@
         "winHide": false,
         "oldrc": false,
         "name": "",
-        "x": 530,
+        "x": 510,
         "y": 600,
         "wires": [
             [],
@@ -957,8 +1214,7 @@
                 "e5b72e25cd78bb7d",
                 "cd4a128cd0e11b83",
                 "56ceb020f19ffac0",
-                "9d043fff577da6ec",
-                "dc8ee26614b371bf"
+                "9d043fff577da6ec"
             ]
         ]
     },
@@ -1074,7 +1330,7 @@
         "g": "4dfb0d38379b8a64",
         "group": "9e639269c77b9c9d",
         "name": "",
-        "order": 2,
+        "order": 1,
         "width": 0,
         "height": 0,
         "format": "<table>\n    <tr>\n        <td>{{msg.name}}</td>\n        <td>{{msg.description}}</td>\n        <td>{{msg.alike}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"80\" ></td>\n    </tr>\n</table>",
@@ -1144,8 +1400,7 @@
         "y": 660,
         "wires": [
             [
-                "761ce18ca6cfdad7",
-                "bd16fcc056ec514c"
+                "761ce18ca6cfdad7"
             ]
         ]
     },
@@ -1308,7 +1563,7 @@
         "g": "4dfb0d38379b8a64",
         "group": "9e639269c77b9c9d",
         "name": "",
-        "order": 3,
+        "order": 2,
         "width": 0,
         "height": 0,
         "format": "<table>\n    <tr>\n        <td>{{msg.name}}</td>\n        <td>{{msg.description}}</td>\n        <td>{{msg.alike}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"80\" ></td>\n    </tr>\n</table>",
@@ -1330,7 +1585,7 @@
         "g": "4dfb0d38379b8a64",
         "group": "9e639269c77b9c9d",
         "name": "",
-        "order": 4,
+        "order": 3,
         "width": 0,
         "height": 0,
         "format": "<table>\n    <tr>\n        <td>{{msg.name}}</td>\n        <td>{{msg.description}}</td>\n        <td>{{msg.alike}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"80\" ></td>\n    </tr>\n</table>",
@@ -1352,7 +1607,7 @@
         "g": "4dfb0d38379b8a64",
         "group": "9e639269c77b9c9d",
         "name": "",
-        "order": 5,
+        "order": 4,
         "width": 0,
         "height": 0,
         "format": "<table>\n    <tr>\n        <td>{{msg.name}}</td>\n        <td>{{msg.description}}</td>\n        <td>{{msg.alike}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"80\" ></td>\n    </tr>\n</table>",
@@ -1374,7 +1629,7 @@
         "g": "4dfb0d38379b8a64",
         "group": "9e639269c77b9c9d",
         "name": "",
-        "order": 6,
+        "order": 5,
         "width": 0,
         "height": 0,
         "format": "<table>\n    <tr>\n        <td>{{msg.name}}</td>\n        <td>{{msg.description}}</td>\n        <td>{{msg.alike}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"80\" ></td>\n    </tr>\n</table>",
@@ -1388,41 +1643,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "dc8ee26614b371bf",
-        "type": "debug",
-        "z": "3b3c60cac9e15652",
-        "g": "4dfb0d38379b8a64",
-        "name": "debug 1",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 320,
-        "y": 1040,
-        "wires": []
-    },
-    {
-        "id": "bd16fcc056ec514c",
-        "type": "debug",
-        "z": "3b3c60cac9e15652",
-        "g": "4dfb0d38379b8a64",
-        "name": "debug 2",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1180,
-        "y": 600,
-        "wires": []
     },
     {
         "id": "8de9bcbffcc5f4a9",
@@ -1814,76 +2034,899 @@
         ]
     },
     {
-        "id": "9e639269c77b9c9d",
-        "type": "ui_group",
-        "name": "Capture",
-        "tab": "6b84b172526fb6d5",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
+        "id": "47c2aa63e8ab775e",
+        "type": "exec",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "command": "curl --location 'http://localhost:32168/v1/image/ocr' --form 'file=@\"/home/hugo/Pictures/detect.jpg\"'",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "OCR detect",
+        "x": 470,
+        "y": 1260,
+        "wires": [
+            [
+                "8eebe6a15256e515"
+            ],
+            [],
+            []
+        ]
     },
     {
-        "id": "45493670ebbd75ca",
-        "type": "ui_group",
-        "name": "View",
-        "tab": "6b84b172526fb6d5",
-        "order": 1,
-        "disp": true,
-        "width": "12",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "d8380dafa5eff9d1",
-        "type": "ui_group",
-        "name": "Face Registration",
-        "tab": "6b84b172526fb6d5",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "78c4e9e81da0615d",
-        "type": "mqtt-broker",
+        "id": "8eebe6a15256e515",
+        "type": "json",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
         "name": "",
-        "broker": "localhost",
-        "port": "1883",
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": "60",
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 650,
+        "y": 1260,
+        "wires": [
+            [
+                "80bbceddac2ccc5c",
+                "6745bd0b2f37a188"
+            ]
+        ]
     },
     {
-        "id": "6b84b172526fb6d5",
-        "type": "ui_tab",
-        "name": "Facial Recognition",
-        "icon": "dashboard",
+        "id": "80bbceddac2ccc5c",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 16",
+        "func": "// Initialize variables to store text and coordinates\nvar texts = [];\nvar coordinates = [];\n\n// Iterate through predictions and extract text and coordinates\nif (msg.payload.hasOwnProperty('predictions') && Array.isArray(msg.payload.predictions)) {\n    for (var i = 0; i < 5; i++) {\n        if (i < msg.payload.predictions.length) {\n            texts[i] = msg.payload.predictions[i].label || ' '; // Use a space for empty text\n            coordinates[i] = {\n                x_min: msg.payload.predictions[i].x_min || ' ',\n                y_min: msg.payload.predictions[i].y_min || ' ',\n                x_max: msg.payload.predictions[i].x_max || ' ',\n                y_max: msg.payload.predictions[i].y_max || ' '\n            };\n        } else {\n            // Fill with blank spaces for any missing predictions\n            texts[i] = ' ';\n            coordinates[i] = {\n                x_min: '0',\n                y_min: '0',\n                x_max: '1',\n                y_max: '1'\n            };\n        }\n    }\n} else {\n    for (var i = 0; i < 5; i++) {\n        if (i < 5) {\n            // Fill with blank spaces for any missing predictions\n            texts[i] = ' ';\n            coordinates[i] = {\n                x_min: '0',\n                y_min: '0',\n                x_max: '1',\n                y_max: '1'\n            };\n        }\n    }\n}\n\n// Set the result properties in the output message\nmsg.text0 = texts[0];\nmsg.text1 = texts[1];\nmsg.text2 = texts[2];\nmsg.text3 = texts[3];\nmsg.text4 = texts[4];\nmsg.coordinates0 = coordinates[0];\nmsg.coordinates1 = coordinates[1];\nmsg.coordinates2 = coordinates[2];\nmsg.coordinates3 = coordinates[3];\nmsg.coordinates4 = coordinates[4];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 1340,
+        "wires": [
+            [
+                "07cfc4b1cc097c34",
+                "e7370728ed95987a",
+                "455e059c42cdf68d",
+                "56c780d43543e03a",
+                "eea46537294a2d58"
+            ]
+        ]
+    },
+    {
+        "id": "1851747b5f45602d",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "group": "e6bb8dbef78e3b7e",
+        "name": "",
         "order": 1,
-        "disabled": false,
-        "hidden": false
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <tr>\n        <td>{{msg.text0}}</td>\n        <td><img src=\"{{msg.filename}}\" height=\"40\" ></td>\n    </tr>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1200,
+        "y": 1380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37aeb6dd30288d6b",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "group": "e6bb8dbef78e3b7e",
+        "name": "",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <tr>\n        <td>{{msg.text1}}</td>\n        <td><img src=\"{{msg.payload}}\" height=\"40\" ></td>\n    </tr>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1200,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "106cae68185afecc",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "group": "e6bb8dbef78e3b7e",
+        "name": "",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <tr>\n        <td>{{msg.text2}}</td>\n        <td><img src=\"{{msg.payload}}\" height=\"40\" ></td>\n    </tr>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1200,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4850aa3fba0681b7",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "group": "e6bb8dbef78e3b7e",
+        "name": "",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <tr>\n        <td>{{msg.text3}}</td>\n        <td><img src=\"{{msg.payload}}\" height=\"40\" ></td>\n    </tr>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1200,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bbf0910d80e9ff02",
+        "type": "ui_template",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "group": "e6bb8dbef78e3b7e",
+        "name": "",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<table>\n    <tr>\n        <td>{{msg.text4}}</td>\n        <td><img src=\"{{msg.payload}}\" height=\"40\" ></td>\n    </tr>\n</table>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 1200,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97b54477ac8b5b3f",
+        "type": "http in",
+        "z": "3b3c60cac9e15652",
+        "g": "4036ea1e0eebbcce",
+        "name": "",
+        "url": "/images/*",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 130,
+        "y": 1140,
+        "wires": [
+            [
+                "2038deced828d37b"
+            ]
+        ]
+    },
+    {
+        "id": "242167a0d62d3ce0",
+        "type": "file in",
+        "z": "3b3c60cac9e15652",
+        "g": "4036ea1e0eebbcce",
+        "name": "",
+        "filename": "filename",
+        "filenameType": "msg",
+        "format": "",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 520,
+        "y": 1140,
+        "wires": [
+            [
+                "efec9f13de776c17"
+            ]
+        ]
+    },
+    {
+        "id": "efec9f13de776c17",
+        "type": "http response",
+        "z": "3b3c60cac9e15652",
+        "g": "4036ea1e0eebbcce",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 670,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "2038deced828d37b",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "4036ea1e0eebbcce",
+        "name": "function 17",
+        "func": "// Extract the characters after the last slash\nvar url = msg.req.url;\nvar filename = url.substring(url.lastIndexOf('/') + 1);\n\n// Create the full path for the image\nvar imagePath = '/home/hugo/Pictures/' + filename;\n\n// Assign the image path to msg.filename\nmsg.filename = imagePath;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1140,
+        "wires": [
+            [
+                "242167a0d62d3ce0"
+            ]
+        ]
+    },
+    {
+        "id": "038484f0451b6349",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 18",
+        "func": "msg.payload = \"python3 /home/hugo/Documents/GitHub/data-visualization/OpenCV/crop-text.py /home/hugo/Pictures/detect.jpg 0 \" + msg.payload.predictions[0].x_min + \" \" + msg.payload.predictions[0].x_max + \" \" + msg.payload.predictions[0].y_min + \" \" + msg.payload.predictions[0].y_max;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1340,
+        "wires": [
+            [
+                "d0e6cd88d3e557b1"
+            ]
+        ]
+    },
+    {
+        "id": "d0e6cd88d3e557b1",
+        "type": "exec",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 830,
+        "y": 1340,
+        "wires": [
+            [
+                "13da289f2e9dfedb"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8afe2b068854efb7",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 19",
+        "func": "if (msg.text1 != \" \"){\n    msg.payload = \"python3 /home/hugo/Documents/GitHub/data-visualization/OpenCV/crop-text.py /home/hugo/Pictures/detect.jpg 1 \" + msg.payload.predictions[1].x_min + \" \" + msg.payload.predictions[1].x_max + \" \" + msg.payload.predictions[1].y_min + \" \" + msg.payload.predictions[1].y_max;\n    return msg;\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1420,
+        "wires": [
+            [
+                "51508ad4e8911624"
+            ]
+        ]
+    },
+    {
+        "id": "12c5959bba524e90",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 20",
+        "func": "if (msg.text2 != \" \"){\n    msg.payload = \"python3 /home/hugo/Documents/GitHub/data-visualization/OpenCV/crop-text.py /home/hugo/Pictures/detect.jpg 2 \" + msg.payload.predictions[2].x_min + \" \" + msg.payload.predictions[2].x_max + \" \" + msg.payload.predictions[2].y_min + \" \" + msg.payload.predictions[2].y_max;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1500,
+        "wires": [
+            [
+                "8b1f03330f090760"
+            ]
+        ]
+    },
+    {
+        "id": "dfc4f0b3a08e3bf1",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 21",
+        "func": "if (msg.text3 != \" \"){\n    msg.payload = \"python3 /home/hugo/Documents/GitHub/data-visualization/OpenCV/crop-text.py /home/hugo/Pictures/detect.jpg 3 \" + msg.payload.predictions[3].x_min + \" \" + msg.payload.predictions[3].x_max + \" \" + msg.payload.predictions[3].y_min + \" \" + msg.payload.predictions[3].y_max;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1580,
+        "wires": [
+            [
+                "c51080e1b0fbbe21"
+            ]
+        ]
+    },
+    {
+        "id": "df7528d7d2a24682",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 22",
+        "func": "if (msg.text4 != \" \"){\n    msg.payload = \"python3 /home/hugo/Documents/GitHub/data-visualization/OpenCV/crop-text.py /home/hugo/Pictures/detect.jpg 4 \" + msg.payload.predictions[4].x_min + \" \" + msg.payload.predictions[4].x_max + \" \" + msg.payload.predictions[4].y_min + \" \" + msg.payload.predictions[4].y_max;\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1660,
+        "wires": [
+            [
+                "4ff6608a603d4539"
+            ]
+        ]
+    },
+    {
+        "id": "51508ad4e8911624",
+        "type": "exec",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 830,
+        "y": 1420,
+        "wires": [
+            [
+                "7555773de5458357"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8b1f03330f090760",
+        "type": "exec",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 830,
+        "y": 1500,
+        "wires": [
+            [
+                "c95872691031343b"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c51080e1b0fbbe21",
+        "type": "exec",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 830,
+        "y": 1580,
+        "wires": [
+            [
+                "9bb1c7d21c37b0ed"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "4ff6608a603d4539",
+        "type": "exec",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 830,
+        "y": 1660,
+        "wires": [
+            [
+                "ed3dd00a980b912e"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6745bd0b2f37a188",
+        "type": "debug",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "403148938b38912c",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 23",
+        "func": "msg.text0 = \" \";\nmsg.payload = \"http://localhost:1880/images/blank.png\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1380,
+        "wires": [
+            [
+                "1851747b5f45602d"
+            ]
+        ]
+    },
+    {
+        "id": "01e3e08f3de5d01a",
+        "type": "inject",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 1260,
+        "wires": [
+            [
+                "47c2aa63e8ab775e"
+            ]
+        ]
+    },
+    {
+        "id": "07cfc4b1cc097c34",
+        "type": "switch",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "",
+        "property": "text0",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": " ",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": " ",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 1340,
+        "wires": [
+            [
+                "038484f0451b6349"
+            ],
+            [
+                "403148938b38912c"
+            ]
+        ]
+    },
+    {
+        "id": "e7370728ed95987a",
+        "type": "switch",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "",
+        "property": "text1",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": " ",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": " ",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 1420,
+        "wires": [
+            [
+                "8afe2b068854efb7"
+            ],
+            [
+                "4bac0356fc87e52c"
+            ]
+        ]
+    },
+    {
+        "id": "4bac0356fc87e52c",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 24",
+        "func": "msg.text1 = \" \";\nmsg.payload = \"http://localhost:1880/images/blank.png\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1460,
+        "wires": [
+            [
+                "37aeb6dd30288d6b"
+            ]
+        ]
+    },
+    {
+        "id": "2fa1bd93acdadd4f",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 25",
+        "func": "msg.text2 = \" \";\nmsg.payload = \"http://localhost:1880/images/blank.png\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1540,
+        "wires": [
+            [
+                "106cae68185afecc"
+            ]
+        ]
+    },
+    {
+        "id": "33295b795b946d33",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 26",
+        "func": "msg.text3 = \" \";\nmsg.payload = \"http://localhost:1880/images/blank.png\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1620,
+        "wires": [
+            [
+                "4850aa3fba0681b7"
+            ]
+        ]
+    },
+    {
+        "id": "a8379d11bfd868b8",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 27",
+        "func": "msg.text4 = \" \";\nmsg.payload = \"http://localhost:1880/images/blank.png\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1700,
+        "wires": [
+            [
+                "bbf0910d80e9ff02"
+            ]
+        ]
+    },
+    {
+        "id": "455e059c42cdf68d",
+        "type": "switch",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "",
+        "property": "text2",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": " ",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": " ",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 1500,
+        "wires": [
+            [
+                "12c5959bba524e90"
+            ],
+            [
+                "2fa1bd93acdadd4f"
+            ]
+        ]
+    },
+    {
+        "id": "56c780d43543e03a",
+        "type": "switch",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "",
+        "property": "text3",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": " ",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": " ",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 1580,
+        "wires": [
+            [
+                "dfc4f0b3a08e3bf1"
+            ],
+            [
+                "33295b795b946d33"
+            ]
+        ]
+    },
+    {
+        "id": "eea46537294a2d58",
+        "type": "switch",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "",
+        "property": "text4",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": " ",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": " ",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 470,
+        "y": 1660,
+        "wires": [
+            [
+                "df7528d7d2a24682"
+            ],
+            [
+                "a8379d11bfd868b8"
+            ]
+        ]
+    },
+    {
+        "id": "13da289f2e9dfedb",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 28",
+        "func": "msg.filename = \"http://localhost:1880/images/img0.jpg\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1340,
+        "wires": [
+            [
+                "1851747b5f45602d"
+            ]
+        ]
+    },
+    {
+        "id": "7555773de5458357",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 29",
+        "func": "msg.payload = \"http://localhost:1880/images/img1.jpg\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1420,
+        "wires": [
+            [
+                "37aeb6dd30288d6b"
+            ]
+        ]
+    },
+    {
+        "id": "c95872691031343b",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 30",
+        "func": "msg.payload = \"http://localhost:1880/images/img2.jpg\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1500,
+        "wires": [
+            [
+                "106cae68185afecc"
+            ]
+        ]
+    },
+    {
+        "id": "9bb1c7d21c37b0ed",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 31",
+        "func": "msg.payload = \"http://localhost:1880/images/img3.jpg\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1580,
+        "wires": [
+            [
+                "4850aa3fba0681b7"
+            ]
+        ]
+    },
+    {
+        "id": "ed3dd00a980b912e",
+        "type": "function",
+        "z": "3b3c60cac9e15652",
+        "g": "fae4d768ecaa3b3c",
+        "name": "function 32",
+        "func": "msg.payload = \"http://localhost:1880/images/img4.jpg\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 1660,
+        "wires": [
+            [
+                "bbf0910d80e9ff02"
+            ]
+        ]
     }
 ]
