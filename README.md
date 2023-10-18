@@ -14,8 +14,6 @@ This repository contains an app that does the following:
     - Compare the captured face to a collection of 40 other people.
     - Display the live camera feed, the extracted face, the top 5 most similar faces from the collection, and a numerical value representing their similarity (recognition score).
 
-![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-16%2004-01-04.png?raw=true)
-
 2. Image Processing + OCR (Optical Character Recognition)
 
     **Objective**: Develop an application that uses a live webcam feed to capture text from objects such as product labels, book titles, and packaging.
@@ -25,6 +23,7 @@ This repository contains an app that does the following:
     - Convert the extracted image text to unicode characters using OCR. 
     - Display the results on the screen, stacking them akin to a table format that juxtaposes the cropped images and their corresponding unicode text.
 
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-18%2000-03-32.png?raw=true) 
 
 ## Quirks and features
 
