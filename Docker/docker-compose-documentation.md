@@ -29,7 +29,6 @@ This repository has the YAML file needed to define this portion of the "data-vis
     cp ~/Documents/GitHub/data-visualization/Docker/compose.yaml ~/DockerCompose/compose.yaml
     ```
     **Note**: Edit the following
-    - MySQL password.
     - The user in *mosquitto volumes* absolute path. This is because mosquitto container does not support relative paths.
 4. Move the mosquito **.conf** file located in this repository from ```data-visualization/Mosquitto/mosquitto.conf``` to ```~/DockerVolumes/Mosquitto/config```
     ```
@@ -76,13 +75,6 @@ sudo docker exec -it [container-id] mosquitto_pub -h localhost -t mosquitto/test
 ```
 
 The message "Hello Mosquitto" will appear in the subscription window.
-### MySQL
-
-Get into the MySQL CLI:
-```
-sudo docker exec -it [id_del_contenedor] mysql -u root -p
-```
-Use the setted passwrod. Default password is **my-secret-pw**
 
 ## Troubleshooting
 

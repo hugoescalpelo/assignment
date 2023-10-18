@@ -30,17 +30,5 @@ services:
     networks:
       - iot-network
 
-  mysql:
-    image: mysql:latest
-    volumes:
-      #- ~/DockerVolumes/MySQL/config/my.cnf:/etc/mysql/my.cnf
-      - ~/DockerVolumes/MySQL/data:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: my-secret-pw
-    ports:
-      - "3306:3306"
-    networks:
-      - iot-network
-
 networks:
   iot-network:
