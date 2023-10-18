@@ -2,7 +2,7 @@
 
 Face Recognition is a function of CodeProjec.AI Server that allows you to recognize a face in a facial dataface that returns similarity index.
 
-To use "codeproject" you must make web requests to the API. Here is an example of Face Recognition request.
+To use **CodeProject.AI Server** you must make web requests to the API. Here is an example of Face Recognition request.
 
 This instructions assumes that you have [Postman](https://github.com/hugoescalpelo/data-visualization/blob/main/Postman/postman-documentation.md) installed and previously registered faces.
 

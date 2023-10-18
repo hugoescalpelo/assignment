@@ -2,7 +2,7 @@
 
 Face Registration is a function of CodeProjec.AI Server that allows you to register a face and then check for similarity.
 
-To use "codeproject" you must make web requests to the API. Here is an example of Face Registration request.
+To use **CodeProject.AI Server** you must make web requests to the API. Here is an example of Face Registration request.
 
 This instructions assumes that you have [Postman](https://github.com/hugoescalpelo/data-visualization/blob/main/Postman/postman-documentation.md) installed and a picture with a face in it.
 

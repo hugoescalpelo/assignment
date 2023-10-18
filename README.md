@@ -100,8 +100,15 @@ Once an Ubuntu system is set, follow this steps. Linked documentation includes d
 ## Testing
 I also provide testing instuctions as part of my archive process.
 
-- [CodeProject.AI basic tests](https://github.com/hugoescalpelo/data-visualization/blob/main/CodeProject.AI/basic-testing.md)
+- [CodeProject.AI Server basic tests](https://github.com/hugoescalpelo/data-visualization/blob/main/CodeProject.AI/basic-testing.md)
 - [Deepface basic tests](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md   )
+
+You can also test the API for **CodeProject.AI Server**. You will need to install Postman, chech the [instructions here](https://github.com/hugoescalpelo/data-visualization/blob/main/Postman/postman-documentation.md).
+
+- [Face Detection](https://github.com/hugoescalpelo/data-visualization/blob/main/CodeProject.AI/face-detection.md)
+- [Face Register](https://github.com/hugoescalpelo/data-visualization/blob/main/CodeProject.AI/register-testing.md)
+- [Face Recognition](https://github.com/hugoescalpelo/data-visualization/blob/main/CodeProject.AI/face-recognition.md)
+- [OCR]()
 
 ## Launching instructions
 
