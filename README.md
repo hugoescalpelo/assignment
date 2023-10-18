@@ -89,7 +89,7 @@ Once an Ubuntu system is set, follow this steps. Linked documentation includes d
 2. Install Docker Engine. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-documentation.md)
 3. Enable GPU Access to containers. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-gpu-documentation.md)
 4. Set the Docker Compose file. This step will install CodeProject.AI Server, mosquitto and MySQL Server. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/Docker/docker-compose-documentation.md)
-5. Configure CodeProject.AI Server for OCR. [Details]()
+5. Configure CodeProject.AI Server for OCR. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/CodeProject.AI/ocr-settings.md)
 6. Program the IP camera. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/ESP32CAM/video-server-documentation.md)
 7. Set up deepface. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/deepface/deepface-documentation.md).
 8. Install and configure Node-Red. [Details](https://github.com/hugoescalpelo/data-visualization/blob/main/NodeRed/node-red-documentation.md)
@@ -123,7 +123,11 @@ To launch this App, you need the following:
 2. Energize the ESP32CAM
 3. Run Node-Red with ```node-red```
 4. Open [localhost:1880/ui](http://localhost:1880/ui)
-5. Clic on capture button.
+
+## Operation Instructions
+1. Clic on capture button to run the facial recognition.
+
+Note: OCR works automatically
 
 You will see something similar to the first image of this document.
 
