@@ -49,7 +49,7 @@ This instructions assumes that you have Postman installed and previously registe
     "analysisRoundTripMs": 367
     }
     ```
-![]()
+![](https://github.com/hugoescalpelo/data-visualization/blob/main/Images/Screenshot%20from%202023-10-17%2018-02-32.png?raw=true)
 ## Reference
 
 - [CodeProject.AI Server - Face Detection API Reference](https://www.codeproject.com/ai/docs/api/api_reference.html#face-detection)
